@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ultimatemastermind2019.CriarContaViewController">
+   <children>
+      <VBox layoutX="52.0" prefHeight="400.0" prefWidth="551.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Pane prefHeight="350.0" prefWidth="551.0">
+               <children>
+                  <Button fx:id="criarConta" layoutX="320.0" layoutY="268.0" mnemonicParsing="false" onAction="#criarConta" prefHeight="25.0" prefWidth="182.0" text="Criar Conta" />
+                  <Button fx:id="voltarLogin" layoutX="55.0" layoutY="268.0" mnemonicParsing="false" onAction="#voltar" prefHeight="25.0" prefWidth="182.0" text="Voltar" />
+                  <Label layoutX="55.0" layoutY="71.0" text="Usuario" />
+                  <Label layoutX="55.0" layoutY="113.0" text="Senha" />
+                  <TextField fx:id="usuarioField" layoutX="113.0" layoutY="67.0" prefHeight="25.0" prefWidth="389.0" />
+                  <PasswordField fx:id="senhaField" layoutX="113.0" layoutY="109.0" prefHeight="25.0" prefWidth="389.0" />
+                  <TextField fx:id="usuarioNome" layoutX="113.0" layoutY="150.0" prefHeight="25.0" prefWidth="389.0" />
+                  <TextField fx:id="usuarioFone" layoutX="113.0" layoutY="193.0" prefHeight="25.0" prefWidth="389.0" />
+                  <Label layoutX="55.0" layoutY="154.0" text="Nome" />
+                  <Label layoutX="55.0" layoutY="197.0" text="Fone" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</Pane>

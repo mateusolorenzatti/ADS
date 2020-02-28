@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="UltimateMasterMind2019.jnlp">
+  <information>
+    <title>UltimateMasterMind2019</title>
+    <vendor>5220203</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="UltimateMasterMind2019.jar" size="19703" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="UltimateMasterMind2019" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="ultimatemastermind2019.UltimateMasterMind2019"  name="UltimateMasterMind2019" />
+  <update check="always"/>
+</jnlp>

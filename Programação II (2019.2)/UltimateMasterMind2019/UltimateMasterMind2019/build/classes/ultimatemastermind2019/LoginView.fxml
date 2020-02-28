@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ultimatemastermind2019.LoginViewController">
+   <children>
+      <VBox layoutX="52.0" prefHeight="400.0" prefWidth="551.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Pane prefHeight="381.0" prefWidth="551.0">
+               <children>
+                  <Button fx:id="logarBotao" layoutX="320.0" layoutY="293.0" mnemonicParsing="false" onAction="#logar" prefHeight="25.0" prefWidth="182.0" text="Logar" />
+                  <Button fx:id="criarContaBotao" layoutX="55.0" layoutY="293.0" mnemonicParsing="false" onAction="#criarConta" prefHeight="25.0" prefWidth="182.0" text="Novo Usuário" />
+                  <Label layoutX="52.0" layoutY="163.0" text="Usuario" />
+                  <Label layoutX="52.0" layoutY="202.0" text="Senha" />
+                  <TextField fx:id="usuarioField" layoutX="110.0" layoutY="159.0" prefHeight="25.0" prefWidth="389.0" />
+                  <PasswordField fx:id="senhaField" layoutX="110.0" layoutY="198.0" prefHeight="25.0" prefWidth="389.0" />
+                  <Label layoutX="107.0" layoutY="24.0" text="UltimateMasterMind2019">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="96.0" layoutY="83.0" text="by Mateus Orlandin Lorenzatti e Vinícius Fardo Riboldi">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</Pane>

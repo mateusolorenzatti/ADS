@@ -1,5 +1,6 @@
-package Pilha;
+package Testes;
 
+import Pilha.PilhaVetor;
 import Pilha.PilhaVetor;
 import java.util.Stack;
 
