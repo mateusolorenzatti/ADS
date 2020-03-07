@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Fila;
+package Estruturas.Fila;
 
 /**
  *
- * @author Xavier
+ * @author Xavier & mateusolorenzatti
  */
 public class FilaVetor {
 
@@ -57,6 +57,19 @@ public class FilaVetor {
 
     public int getTamanho() {
         return (this.fim - this.inicio);
+    }
+    
+    public String toStr(){
+        String str = "Fila: \n";
+        
+        for (int i = this.inicio; i < this.fim; i++) {
+            str += " - " + this.array[i] + "\n";
+        }
+        
+        str += " --------------------- ";
+        str += " Total de itens: " + (this.fim - this.inicio);
+        
+        return str;
     }
 
 }

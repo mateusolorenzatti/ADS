@@ -1,4 +1,4 @@
-package Pilha;
+package Estruturas.Pilha;
 
 import java.util.LinkedList;
 

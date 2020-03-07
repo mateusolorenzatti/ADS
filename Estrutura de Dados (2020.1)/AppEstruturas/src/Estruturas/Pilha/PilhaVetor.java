@@ -1,7 +1,4 @@
-package Pilha;
-
-import Helpers.CounterUsers;
-
+package Estruturas.Pilha;
 
 /* Implementação de Pilha
  *
@@ -20,7 +17,7 @@ public class PilhaVetor {
         this.topo = 0;
 
         if (tam <= 0) {
-            CounterUsers.fechar();
+            System.exit(0);
         }
 
         this.array = new Object[tam];
@@ -55,8 +52,7 @@ public class PilhaVetor {
         return this.array.length;
     }
     
-    @Override
-    public String toString(){
+    public String toStr(){
         String r = "Vetor em Pilha: \n";
          
         for (int i = 0; i < this.topo; i++) {
