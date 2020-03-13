@@ -1,7 +1,7 @@
-package Testes;
+package Projeto.Testes;
 
 import Estruturas.Pilha.PilhaVetor;
-import Interfaces.I_TesteEstrutura;
+import Projeto.Interfaces.I_TesteEstrutura;
 
 /*
  * @author mateusolorenzatti
@@ -38,10 +38,14 @@ public class TestePilha implements I_TesteEstrutura {
 
         this.pilha.remove();
 
-        System.out.println(this.pilha.toStr());
     }
 
+    public void mostrarElementos() {
+        System.out.println(this.pilha.toStr());
+    }
+    
     public static void main(String[] args) {
         TestePilha tf = new TestePilha();
     }
+
 }

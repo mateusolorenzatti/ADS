@@ -1,7 +1,7 @@
-package Testes;
+package Projeto.Testes;
 
 import Estruturas.Fila.FilaVetor;
-import Interfaces.I_TesteEstrutura;
+import Projeto.Interfaces.I_TesteEstrutura;
 
 /*
  * @author mateusolorenzatti
@@ -30,7 +30,7 @@ public class TesteFila implements I_TesteEstrutura{
 
         this.fila.insere(param);
 
-        System.out.println(this.fila.toStr());
+        this.mostrarElementos();
     }
 
     public void removerDaEstrutura() {
@@ -38,10 +38,15 @@ public class TesteFila implements I_TesteEstrutura{
 
         this.fila.retira();
 
-        System.out.println(this.fila.toStr());
+        this.mostrarElementos();
     }
 
     public static void main(String[] args) {
         TesteFila tf = new TesteFila();
+    }
+
+    @Override
+    public void mostrarElementos() {
+        System.out.println(this.fila.toStr());
     }
 }

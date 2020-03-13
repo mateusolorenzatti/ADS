@@ -1,7 +1,7 @@
-package Testes;
+package Projeto.Testes;
 
 import Estruturas.Fila.FilaCircular;
-import Interfaces.I_TesteEstrutura;
+import Projeto.Interfaces.I_TesteEstrutura;
 
 /*
  * @author mateusolorenzatti
@@ -17,19 +17,19 @@ public class TesteFilaCircular implements I_TesteEstrutura {
         this.incluirNaEstrutura(20);
         this.incluirNaEstrutura("!");
         this.incluirNaEstrutura("Melão");
-        
+
         this.removerDaEstrutura();
-        
+
         this.incluirNaEstrutura(23124);
-        
+
         this.removerDaEstrutura();
-        
+
         this.incluirNaEstrutura("Never gonna Give you up");
         this.incluirNaEstrutura("Never gonna let you down");
         this.incluirNaEstrutura("Never gonna make you cry");
-        
+
         this.removerDaEstrutura();
-        
+
     }
 
     public void incluirNaEstrutura(Object param) {
@@ -37,7 +37,7 @@ public class TesteFilaCircular implements I_TesteEstrutura {
 
         this.fila.insere(param);
 
-        System.out.println(this.fila.toStr());
+        this.mostrarElementos();
     }
 
     public void removerDaEstrutura() {
@@ -45,10 +45,15 @@ public class TesteFilaCircular implements I_TesteEstrutura {
 
         this.fila.retira();
 
-        System.out.println(this.fila.toStr());
+        this.mostrarElementos();
     }
 
     public static void main(String[] args) {
         TesteFilaCircular tf = new TesteFilaCircular();
+    }
+
+    @Override
+    public void mostrarElementos() {
+        System.out.println(this.fila.toStr());
     }
 }

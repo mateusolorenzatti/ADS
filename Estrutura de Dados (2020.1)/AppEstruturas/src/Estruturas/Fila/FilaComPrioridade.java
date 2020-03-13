@@ -21,7 +21,7 @@ public class FilaComPrioridade<T> extends Fila<T> {
 
     @Override
     public String toString() {
-        return "FilaComPrioridade (" +this.objetos + ")";
+        return this.objetos + "";
     }
 
 }

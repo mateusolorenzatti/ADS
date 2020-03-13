@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Interfaces;
+package Projeto.Interfaces;
 
 /*
  * @author mateusolorenzatti
  */
 
-
 public interface I_TesteEstrutura {
     void incluirNaEstrutura(Object param);
     void removerDaEstrutura();
+    void mostrarElementos();
 }
