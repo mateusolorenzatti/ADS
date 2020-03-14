@@ -1,0 +1,110 @@
+CREATE TABLE Instituição (
+    IDInstituicao INTEGER PRIMARY KEY,
+    InstituicaoNome VARCHAR(50),
+    InstituicaoTipo VARCHAR
+);
+
+CREATE TABLE Campus (
+    IDCampus INTEGER PRIMARY KEY,
+    NomeCampus VARCHAR(50),
+    fk_Instituição_IDInstituicao INTEGER
+);
+
+CREATE TABLE Departamento (
+    NomeDepartamento VARCHAR(50),
+    AreaDepartamento VARCHAR(50),
+    IDDepartamento INTEGER PRIMARY KEY UNIQUE,
+    fk_Campus_IDCampus INTEGER
+);
+
+CREATE TABLE Curso (
+    IDCurso INTEGER PRIMARY KEY,
+    NomeCurso VARCHAR(50),
+    fk_Departamento_IDDepartamento INTEGER
+);
+
+CREATE TABLE Pessoa (
+    IDPessoa INTEGER PRIMARY KEY,
+    NomePessoa VARCHAR
+);
+
+CREATE TABLE Aluno (
+    MatriculaAluno INTEGER,
+    SituacaoAluno VARCHAR(50),
+    fk_Pessoa_IDPessoa INTEGER,
+    PRIMARY KEY (MatriculaAluno, fk_Pessoa_IDPessoa)
+);
+
+CREATE TABLE Professor (
+    CodProfessor INTEGER,
+    fk_Pessoa_IDPessoa INTEGER,
+    PRIMARY KEY (CodProfessor, fk_Pessoa_IDPessoa)
+);
+
+CREATE TABLE Disciplina (
+    IDDisciplina INTEGER PRIMARY KEY,
+    NomeDisciplina VARCHAR
+);
+
+CREATE TABLE Compor (
+    fk_Curso_IDCurso INTEGER,
+    fk_Disciplina_IDDisciplina INTEGER
+);
+
+CREATE TABLE Cursar_Professor_Aluno_Disciplina (
+    fk_Professor_CodProfessor INTEGER,
+    fk_Professor_fk_Pessoa_IDPessoa INTEGER,
+    fk_Aluno_MatriculaAluno INTEGER,
+    fk_Aluno_fk_Pessoa_IDPessoa INTEGER,
+    fk_Disciplina_IDDisciplina INTEGER
+);
+ 
+ALTER TABLE Campus ADD CONSTRAINT FK_Campus_2
+    FOREIGN KEY (fk_Instituição_IDInstituicao)
+    REFERENCES Instituição (IDInstituicao)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Departamento ADD CONSTRAINT FK_Departamento_2
+    FOREIGN KEY (fk_Campus_IDCampus)
+    REFERENCES Campus (IDCampus)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Curso ADD CONSTRAINT FK_Curso_2
+    FOREIGN KEY (fk_Departamento_IDDepartamento)
+    REFERENCES Departamento (IDDepartamento)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Aluno ADD CONSTRAINT FK_Aluno_2
+    FOREIGN KEY (fk_Pessoa_IDPessoa)
+    REFERENCES Pessoa (IDPessoa)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Professor ADD CONSTRAINT FK_Professor_2
+    FOREIGN KEY (fk_Pessoa_IDPessoa)
+    REFERENCES Pessoa (IDPessoa)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Compor ADD CONSTRAINT FK_Compor_1
+    FOREIGN KEY (fk_Curso_IDCurso)
+    REFERENCES Curso (IDCurso)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE Compor ADD CONSTRAINT FK_Compor_2
+    FOREIGN KEY (fk_Disciplina_IDDisciplina)
+    REFERENCES Disciplina (IDDisciplina)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE Cursar_Professor_Aluno_Disciplina ADD CONSTRAINT FK_Cursar_Professor_Aluno_Disciplina_1
+    FOREIGN KEY (fk_Professor_CodProfessor, fk_Professor_fk_Pessoa_IDPessoa)
+    REFERENCES Professor (CodProfessor, fk_Pessoa_IDPessoa)
+    ON DELETE NO ACTION;
+ 
+ALTER TABLE Cursar_Professor_Aluno_Disciplina ADD CONSTRAINT FK_Cursar_Professor_Aluno_Disciplina_2
+    FOREIGN KEY (fk_Aluno_MatriculaAluno, fk_Aluno_fk_Pessoa_IDPessoa)
+    REFERENCES Aluno (MatriculaAluno, fk_Pessoa_IDPessoa)
+    ON DELETE NO ACTION;
+ 
+ALTER TABLE Cursar_Professor_Aluno_Disciplina ADD CONSTRAINT FK_Cursar_Professor_Aluno_Disciplina_3
+    FOREIGN KEY (fk_Disciplina_IDDisciplina)
+    REFERENCES Disciplina (IDDisciplina)
+    ON DELETE NO ACTION;
