@@ -1,2 +1,3 @@
-# ADS
-Cúmulo de pequenos projetos criados nas aulas da graduação.
+# Análise e Desenvolvimento de Sistemas 
+### Institução: IFRS Campus Farroupilha
+Curso com início no semestre 2019/1
