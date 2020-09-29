@@ -1,10 +1,14 @@
+import com.sun.xml.internal.ws.wsdl.writer.UsingAddressing;
+
+import java.util.ArrayList;
+
 public class Turma{
 	private Nodo inicio;
 	
 	public Turma(){
 		inicio = null;
 	}
-	//Insere no Início da Lista
+	//Insere no Inï¿½cio da Lista
 	public boolean insereInicio(Aluno aluno){
 	  Nodo novo = new Nodo(aluno);
 	    
@@ -15,7 +19,7 @@ public class Turma{
 	  	 novo.setProx(inicio);
 		 inicio=novo;   
 	  }
-	  return true; //Sempre consegue inserir (só não consegue se não houver memória disponível)
+	  return true; //Sempre consegue inserir (sï¿½ nï¿½o consegue se nï¿½o houver memï¿½ria disponï¿½vel)
 	}
 	
 	//Insere no fim da lista
@@ -32,7 +36,7 @@ public class Turma{
 		  }
 		  atual.setProx(novo);   
 		}
-		return true; //Sempre consegue inserir (só não consegue se não houver memória disponível)
+		return true; //Sempre consegue inserir (sï¿½ nï¿½o consegue se nï¿½o houver memï¿½ria disponï¿½vel)
 	}
 	
 	public boolean inserePosicao(Aluno aluno, int pos){
@@ -54,7 +58,7 @@ public class Turma{
 	    	if(pos == tamanho){
 	    		res=insereFim(aluno);
 	        }
-	        else{ //posicao válida
+	        else{ //posicao vï¿½lida
 	        	for(i=0;i<pos;i++){
 	                  ant = atual;
 	                  atual = atual.getProx();
@@ -64,17 +68,34 @@ public class Turma{
 	            res=true;
 	        }
 	   }
-	  return res; //Sempre consegue inserir (só não consegue se não houver memória disponível)
+	  return res; //Sempre consegue inserir (sï¿½ nï¿½o consegue se nï¿½o houver memï¿½ria disponï¿½vel)
 	}
 	
 	
-	// Exercício - Implementar o método abaixo
+	// Exercï¿½cio - Implementar o mï¿½todo abaixo
 	public boolean insereOrdenado(Aluno aluno){
-		return false;
+		// Descobrir a PosiÃ§Ã£o
+		int pos = 0;
+
+		if(!this.vazia()){
+			Nodo atual = inicio;
+
+			while(atual != null){
+				// Caso o condicional abaixo for verdadeiro, ele adiciona na posicao atual do nodo comparado
+				if (aluno.getNome().compareTo(atual.getAluno().getNome()) <= 0){
+					break;
+				}
+				pos ++;
+				atual = atual.getProx();
+			}
+			// Se chegar no final, adiciona no Ãºltimo lugar da lista
+			return this.inserePosicao(aluno, pos);
+		}
+		// Chamar o mÃ©todo jÃ¡ existente, inserePosicao()
+		return this.insereInicio(aluno);
 	}
-	
-	
-	// Retorna verdadeiro ou falso se a lista está vazia ou não.
+
+	// Retorna verdadeiro ou falso se a lista estï¿½ vazia ou nï¿½o.
 	public boolean vazia() {
 		return this.quantidadeAlunos()  == 0;
 	}
@@ -121,7 +142,7 @@ public class Turma{
 		return aluno;
 	}
 	
-	// EXERCÍCIO - Implementar o método abaixo
+	// EXERCï¿½CIO - Implementar o mï¿½todo abaixo
 	public boolean existe(Aluno aluno) {
 		return false;
 	}
@@ -147,10 +168,10 @@ public class Turma{
 		    	ant = atual;
 		    	atual = atual.getProx();
 		 	}
-		 	if(ant != null) { // ant é diferente de nulo se houve navegação
+		 	if(ant != null) { // ant ï¿½ diferente de nulo se houve navegaï¿½ï¿½o
 		 		ant.setProx(null);
 		 	}
-		 	else { // ant é null. Lista com um único elemento (não navegou)
+		 	else { // ant ï¿½ null. Lista com um ï¿½nico elemento (nï¿½o navegou)
 		 		inicio = null; 
 		 	}
 		 	res=true;
@@ -172,7 +193,7 @@ public class Turma{
 		
 	  	if((pos >= 0) && (pos < qtdeAlunos)){ 
 	  	
-	  		if(pos== qtdeAlunos){ //Excluir o último aluno
+	  		if(pos== qtdeAlunos){ //Excluir o ï¿½ltimo aluno
 	  			res = this.excluiFim();
 			}
 			else{
@@ -202,16 +223,16 @@ public class Turma{
         		res=false;
      		}
      		else{
-          		if(inicio.getProx() == null){ //testa se a lista só possui um elemento
-          		// Valor existe na lista, mas a lista só possui um elemento
+          		if(inicio.getProx() == null){ //testa se a lista sï¿½ possui um elemento
+          		// Valor existe na lista, mas a lista sï¿½ possui um elemento
              		inicio = null;
           		}
           		else{
           			if(atual.getAluno().getNome().equals(aluno.getNome())==true){
-          				//Lista possui vários elementos e o elemento a ser excluido é o primeiro
+          				//Lista possui vï¿½rios elementos e o elemento a ser excluido ï¿½ o primeiro
                   		res = excluiInicio();
                		}
-               		else{ //acha o valor a ser excluído
+               		else{ //acha o valor a ser excluï¿½do
                			while(atual.getAluno().getNome().equals(aluno.getNome()) == false){
                      		ant = atual;
                      		atual = atual.getProx();
@@ -223,6 +244,55 @@ public class Turma{
      		}
   		}
   		return res;
+	}
+
+	public String alunosNoIMCInformado(String situacao){
+		String retorno = "";
+
+		IMCInfo imcInfo = IMCInfo.getIMC(situacao);
+
+		if(imcInfo == null) {
+			return "SituaÃ§Ã£o invÃ¡lida!";
+		}
+
+		if(!this.vazia()){
+			Nodo atual = inicio;
+
+			while(atual != null){
+
+				if(imcInfo.alunoEstaNaSituacao(atual.getAluno())){
+					retorno += atual.getAluno().toString() + "\n";
+				}
+
+				atual = atual.getProx();
+			}
+
+			if (retorno.equals("")){
+				retorno = "Nenhum aluno estÃ¡ na situaÃ§Ã£o "+ situacao;
+			}
+
+		}else{
+			retorno = "NÃ£o hÃ¡ alunos na lista! \n";
+		}
+
+		return retorno;
+	}
+
+	public double mediaAlturas(){
+		int soma = 0;
+
+		if(!this.vazia()){
+			Nodo atual = inicio;
+
+			while(atual != null){
+				soma += atual.getAluno().getAltura();
+				atual = atual.getProx();
+			}
+
+			return soma / this.quantidadeAlunos();
+		}
+
+		return 0.0;
 	}
 
 }
