@@ -1,0 +1,12 @@
+ 
+
+Aluno: Mateus Orlandin Lorenzatti
+
+Foi escolhida para a aplicação desta atividade a estrutura de Lista Simplesmente Encadeada. Motivos:
+ - Não possui um limite pré definido pelo programador;
+ - É uma estrutura mais flexível;
+ - Quando comparado com a Duplamente Encadeada, apresenta uma facilidade menor ao remover itens, pois isso afetará apenas 
+dois nodos, o atual e o anterior, que apontava para ele. No caso da Duplamente, afetará três (o próprio nodo em si, o anterior
+e o seguinte);
+ - Já que o procedimento exige que a exclusão seja eficiente, já com a lista ordenada, acredito que a lista simplesmente 
+encadeada possa ser uma boa escolha;
