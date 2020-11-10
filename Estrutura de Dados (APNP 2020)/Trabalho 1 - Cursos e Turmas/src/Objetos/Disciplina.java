@@ -241,6 +241,7 @@ public class Disciplina {
           		if(inicio.getProx() == null){ //testa se a lista s� possui um elemento
           		// Valor existe na lista, mas a lista s� possui um elemento
              		inicio = null;
+             		res = true;
           		}
           		else{
           			if(atual.getAluno().getNome().equals(aluno.getNome())==true){

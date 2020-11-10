@@ -348,17 +348,11 @@ public class Universidade {
         int posicao = this.verificaDisciplina(dis);
 
         if ( posicao >= 0 ){
-            Aluno aluno = getDisciplina(posicao).obtemAluno(getDisciplina(posicao).verificaAluno(al));
+            return getDisciplina(posicao).exclui(al);
 
-            if (aluno != null) {
-
-                getDisciplina(posicao).exclui(aluno);
-            }else{
-                return false;
-            }
+        }else{
+            return false;
         }
-        return false;
-
     }
 
     public boolean removerAlunoDasDisciplinas(Aluno al) {
