@@ -33,11 +33,22 @@ public class ArvorePessoas {
     }
 
     public boolean inserirAmizade(Pessoa p1, Pessoa p2) {
-        NodoPessoaArvore p1Temp = this.pesq_arv_rec(this.raiz, p1);
+        NodoPessoaArvore p1Temp = pesq_arv_rec(this.raiz, p1);
         NodoPessoaArvore p2Temp = pesq_arv_rec(this.raiz, p2);
 
         if (p1Temp != null && p2Temp != null) {
             return p1Temp.insereAmizade(p2) && p2Temp.insereAmizade(p1);
+        } else {
+            return false;
+        }
+    }
+
+    public boolean removerAmizade(Pessoa p1, Pessoa p2) {
+        NodoPessoaArvore p1Temp = pesq_arv_rec(this.raiz, p1);
+        NodoPessoaArvore p2Temp = pesq_arv_rec(this.raiz, p2);
+
+        if (p1Temp != null && p2Temp != null) {
+            return p1Temp.removeAmizade(p2) && p2Temp.removeAmizade(p1);
         } else {
             return false;
         }

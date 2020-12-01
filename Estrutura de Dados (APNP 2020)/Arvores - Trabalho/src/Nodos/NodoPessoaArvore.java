@@ -71,6 +71,8 @@ public class NodoPessoaArvore {
             inicio = novo;
         }
         else{
+            if(verificaAmizade(pes) >= 0) return false;
+
             while(atual.getProx() != null){
                 atual = atual.getProx();
             }

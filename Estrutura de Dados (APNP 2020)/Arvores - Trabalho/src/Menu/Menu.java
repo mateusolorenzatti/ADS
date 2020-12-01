@@ -57,11 +57,11 @@ public class Menu {
 
                 case '2':
                     System.out.println(" Preencha os dados dos envolvidos: ");
-                    Pessoa p1 = leDadosPessoa();
-                    Pessoa p2 = leDadosPessoa();
+                    pessoa_aux = leDadosPessoa();
+                    pessoa_aux2 = leDadosPessoa();
 
-                    if (ar.inserirAmizade(p1, p2)) {
-                        System.out.println(" Amizade entre " + p1.getNome() + " e " + p2.getNome() + " registrada com sucesso! ");
+                    if (ar.inserirAmizade(pessoa_aux, pessoa_aux2)) {
+                        System.out.println(" Amizade entre " + pessoa_aux.getNome() + " e " + pessoa_aux2.getNome() + " registrada com sucesso! ");
                     } else {
                         System.out.println(" Ocorreu um erro ao inserir. Confira se ambas as pessoas exitem. ");
                     }
@@ -83,26 +83,32 @@ public class Menu {
                     String nomeAntigo = leTec.leString(" Nome atual: ");
                     String nomeNovo = leTec.leString(" Novo nome: ");
 
-                    if(ar.renomearPessoa(nomeAntigo, nomeNovo)){
+                    if (ar.renomearPessoa(nomeAntigo, nomeNovo)) {
                         System.out.println(" Renomeado a pessoa " + nomeAntigo + " para " + nomeNovo);
-                    }else{
+                    } else {
                         System.out.println(" Ocorreu um erro. Revise os nomes inseridos.");
                     }
 
                     break;
-//
-//                case '6':
-//                    aluno = leDadosAlu();
-//
-//                    System.out.println(uni.dadosDisciplinaPorAluno(aluno));
-//                    break;
-//
+
+                case '6':
+                    System.out.println(" Preencha os dados dos envolvidos: ");
+                    pessoa_aux = leDadosPessoa();
+                    pessoa_aux2 = leDadosPessoa();
+
+                    if (ar.removerAmizade(pessoa_aux, pessoa_aux2)) {
+                        System.out.println(" Amizade entre " + pessoa_aux.getNome() + " e " + pessoa_aux2.getNome() + " desfeita com sucesso! ");
+                    } else {
+                        System.out.println(" Ocorreu um erro ao desfazer a amizade. Confira se ambas as pessoas exitem. ");
+                    }
+                    break;
+
                 case '7':
                     pessoa_aux = leDadosPessoa();
 
-                    if(ar.removeSeguramente(pessoa_aux)){
+                    if (ar.removeSeguramente(pessoa_aux)) {
                         System.out.println(" Removido " + pessoa_aux.getNome() + " com sucesso!");
-                    }else{
+                    } else {
                         System.out.println(" Ocorreu um erro. Revise o nome inserido.");
                     }
 
@@ -110,13 +116,13 @@ public class Menu {
 
                 case '8':
                     System.out.print("\n Pre-Fixado: [ ");
-                    ar.preFixado( );
+                    ar.preFixado();
 
                     System.out.print("]\n Central: [ ");
-                    ar.central( );
+                    ar.central();
 
                     System.out.print("]\n Pos-Fixado: [ ");
-                    ar.posFixado( );
+                    ar.posFixado();
                     System.out.println("]\n");
                     break;
             }
