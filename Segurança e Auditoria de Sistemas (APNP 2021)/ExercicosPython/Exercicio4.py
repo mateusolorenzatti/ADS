@@ -1,48 +1,45 @@
 __author__ = 'Mateus Orlandin Lorenzatti'
 
 """
-2) Modularize o programa implementado no exercício 1. 
-Ou seja, crie funções  para cada uma das ações realizadas. 
-Quando uma ação for repetida, ao invés de escrever o código novamente, 
-deve-se chamar o nome da função criada que executa o código. 
-Crie no mínimo 3 funções e o programa principal main.
+4) Faça um Programa que peça os 3 lados de um triângulo. 
+O programa deverá informar se os valores podem ser um triângulo. 
+Indique, caso os lados formem um triângulo, 
+se o mesmo é: equilátero, isósceles ou escaleno (triangulo.py). 
 """
 
-def ler_numeros():
-    numeros = []
-    i = 0
+def ler_lados_triangulo():
+    a = int(input(" Insira o tamanho do primeiro lado: "))
+    b = int(input(" Insira o tamanho do segundo lado: "))
+    c = int(input(" Insira o tamanho do terceiro lado: "))
+    print("\n")
 
-    # Ler os números
-    for i in range(0, 4):
-        numeros.append(float(input(" Insira o {}º valor: ".format(i + 1))))
-    return numeros
+    return (a, b, c)
 
-def calcular_soma(numeros):
-    # Calcular a soma
-    soma = 0
-    for numero in numeros:
-        soma += numero
+def verifica_triangulo(a, b, c):
+    if a > (b + c) :
+        return False
+    elif c > (b + a) :
+        return False
+    elif b > (a + c):
+        return False
+    else:
+        return True
 
-    return soma
-
-def calcular_produto(numeros):
-    # Calcular o produto
-    produto = 1
-    for numero in numeros:
-        produto *= numero
-
-    return produto
-
-def exibir_resultados(soma, produto):
-    print("\n Resultados: \n Soma: {} \n Produto: {}".format(soma, produto))
+def verifica_tipo_triangulo(a, b, c):
+    if a == b == c:
+        print(" Triângulo Equilátero ")
+    elif a == b or b == c or c == a:
+        print(" Triângulo Isóceles ")
+    else:
+        print(" Triangulo Escaleno ")
 
 def main():
-    numeros = ler_numeros()
+    triangulo = ler_lados_triangulo()
 
-    soma = calcular_soma(numeros)
-    produto = calcular_produto(numeros)
-
-    exibir_resultados(soma, produto)
+    if verifica_triangulo(*triangulo):
+        verifica_tipo_triangulo(*triangulo)
+    else:
+        print(" Os lados não formam um triângulo!")
 
 if __name__ == "__main__":
     main()
