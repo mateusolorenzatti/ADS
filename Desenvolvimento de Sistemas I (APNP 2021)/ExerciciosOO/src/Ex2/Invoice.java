@@ -1,3 +1,5 @@
+package Ex2;
+
 public class Invoice {
     private String numero;
     private String descricao;

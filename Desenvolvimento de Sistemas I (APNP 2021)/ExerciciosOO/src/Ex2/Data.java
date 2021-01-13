@@ -1,3 +1,5 @@
+package Ex2;
+
 public class Data {
     private int dia;
     private int mes;

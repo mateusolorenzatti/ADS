@@ -1,3 +1,5 @@
+package Ex2;
+
 public class Employee {
     private String nome;
     private String sobrenome;

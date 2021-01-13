@@ -1,7 +1,9 @@
+package Ex2;
+
 public class Test {
 
     public static void testaInvoice(){
-        System.out.println("\n Teste Invoice -------------------------------- \n");
+        System.out.println("\n Teste Ex2.Invoice -------------------------------- \n");
 
         Invoice i1 = new Invoice("21", "Bucha", 2, 15.5);
         Invoice i2 = new Invoice("25", "Pistão", 4, -21.0);
@@ -13,7 +15,7 @@ public class Test {
     }
 
     public static void testaEmployee(){
-        System.out.println("\n Teste Employee -------------------------------- \n");
+        System.out.println("\n Teste Ex2.Employee -------------------------------- \n");
 
         Employee e1 = new Employee("Mateus", "Lorenzatti", 2400);
         Employee e2 = new Employee("Alberto", "Batista", 4025);
@@ -33,7 +35,7 @@ public class Test {
     }
 
     public static void testaData(){
-        System.out.println("\n Teste Data -------------------------------- \n");
+        System.out.println("\n Teste Ex2.Data -------------------------------- \n");
 
         Data d1 = new Data(19, 12, 2000);
         Data d2 = new Data(45, 11, 2032);
