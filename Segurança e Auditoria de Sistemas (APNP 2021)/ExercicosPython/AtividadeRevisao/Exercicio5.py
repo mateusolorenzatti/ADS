@@ -38,7 +38,7 @@ def salvar_arq(caminho, dados):
     afile.close()
 
 def main():
-    FILE_PATH = r'./res/contatos.txt'
+    FILE_PATH = r'res/contatos.txt'
     contatos = []
 
     file2 = open(FILE_PATH, 'rb')

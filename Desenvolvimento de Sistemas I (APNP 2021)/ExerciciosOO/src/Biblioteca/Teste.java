@@ -1,6 +1,6 @@
-package Ex1;
+package Biblioteca;
 
-import Ex2.Data;
+import IED.Data;
 
 public class Teste {
 

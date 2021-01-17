@@ -1,4 +1,4 @@
-package Ex2;
+package IED;
 
 public class Data {
     private int dia;

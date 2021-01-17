@@ -1,4 +1,4 @@
-package Ex1;
+package Biblioteca;
 
 public class Obra {
     private String titulo;
