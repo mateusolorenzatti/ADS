@@ -1,0 +1,24 @@
+Resolução Ex8:
+
+Mensagem: explanation
+
+Chave: leg
+
+Processo:
+
+l   e   g   l   e   g   l   e   g   l   e
+11  4   6   11  4   6   11  4   6   11  4
+
+e   x   p   l   a   n   a   t   i   o   n
+4   23  15  11  0   13  0   19  8   14  13
+
+15  1   21  22  4   19  11  23  14  25  17
+
+Resultado:
+    pbvwetlxozr
+
+Testando no Script:
+    Clear text:
+     explanation
+    Encrypted message:
+    pbvwetlxozr

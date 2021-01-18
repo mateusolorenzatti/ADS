@@ -1,0 +1,72 @@
+Resolução Ex7:
+
+Mensagem Criptografada:
+KXJEY UREBE ZWEHE WRYTU HEYFS
+KREHE GOYFI WTTTU OLKSY CAJPO
+BOTEI ZONTX BYBNT GONEY CUZWR
+GDSON SXBOU YWRHE BAAHY USEDQ
+
+Chave: royal new zealand navy
+
+Matriz:
+R	O	Y	A	L
+N	E	W	Z	D
+V	B	C	F	G
+H	I	K	M	P
+Q	S	T	U	X
+
+Texto Claro:
+PTBOATONEOWENINELOSTINACTIONINBLACKESUSUSTRAITTWOMILESSWMERESUCOVEXCREWOFTWELVEXREQUESTANYINFORMATIONX
+
+Processo:
+kx -> pt : Não encontrou na linha nem coluna
+i/je -> bo : Encontrou na coluna
+yu -> at : Não encontrou na linha nem coluna
+re -> on : Não encontrou na linha nem coluna
+be -> ib : Encontrou na coluna
+zw -> dz : Encontrou nos dois
+eh -> ni : Não encontrou na linha nem coluna
+ew -> wz : Encontrou na linha
+ry -> oa : Encontrou na linha
+tu -> ux : Encontrou na linha
+he -> in : Não encontrou na linha nem coluna
+yf -> ac : Não encontrou na linha nem coluna
+sk -> ti : Não encontrou na linha nem coluna
+re -> on : Não encontrou na linha nem coluna
+he -> in : Não encontrou na linha nem coluna
+go -> bl : Não encontrou na linha nem coluna
+yf -> ac : Não encontrou na linha nem coluna
+i/jw -> ke : Não encontrou na linha nem coluna
+tx -> uq : Encontrou na linha
+tx -> uq : Encontrou na linha
+tu -> ux : Encontrou na linha
+ol -> yr : Encontrou na linha
+ks -> it : Não encontrou na linha nem coluna
+yc -> wk : Encontrou na coluna
+ai/j -> om : Não encontrou na linha nem coluna
+po -> il : Não encontrou na linha nem coluna
+bo -> ie : Encontrou na coluna
+te -> sw : Não encontrou na linha nem coluna
+i/jz -> me : Não encontrou na linha nem coluna
+on -> re : Não encontrou na linha nem coluna
+tx -> uq : Encontrou na linha
+by -> co : Não encontrou na linha nem coluna
+bn -> ve : Não encontrou na linha nem coluna
+tg -> xc : Não encontrou na linha nem coluna
+on -> re : Não encontrou na linha nem coluna
+ey -> wo : Não encontrou na linha nem coluna
+cu -> ft : Não encontrou na linha nem coluna
+zw -> dz : Encontrou na linha
+rg -> lv : Não encontrou na linha nem coluna
+ds -> ex : Não encontrou na linha nem coluna
+on -> re : Não encontrou na linha nem coluna
+sx -> tq : Encontrou na linha
+bo -> ie : Encontrou na coluna
+uy -> ta : Não encontrou na linha nem coluna
+wr -> ny : Não encontrou na linha nem coluna
+he -> in : Não encontrou na linha nem coluna
+ba -> fo : Não encontrou na linha nem coluna
+ah -> rm : Não encontrou na linha nem coluna
+yu -> at : Não encontrou na linha nem coluna
+se -> ob : Encontrou na coluna
+dq -> nx : Não encontrou na linha nem coluna

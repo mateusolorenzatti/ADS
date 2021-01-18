@@ -1,0 +1,71 @@
+Resolução do EX5:
+
+Mensagem: 53‡‡†305))6*;4826)4‡.)4‡);806*;48†8¶60))85;;]8*;:‡*8†83
+(88)5*†;46(;88*96*?;8)*‡(;485);5*†2:*‡(;4956*2(5*-4)8¶8*;4069285);)6†8)
+4‡‡;1(‡9;48081;8:8‡1;48†85;4)485†528806*81(‡9;48;(88;4(‡?34;48)4‡;161;:188;‡?;]
+
+Processo:
+
+Analisando a mensagem, o char '8' é um dos que mais se repete, e é o que tem maior frequência com
+a sua forma duplicada também ('88').
+
+Junto a isso, temos o  ';' e '4', que também são bem frequentes. É notável a frequencia do termo
+';48', que muito possivelmente pode assumir 'the', sendo ';' = 't' e '4' = 'h'
+
+Assim, já temos :
+
+53‡‡†305))6*;h826)h‡.)h‡);806*;h8†8¶60))85;;]8*;:‡*8†83(88)5*†;h6(;88*96
+*?;8)*‡(;h85);5*†2:*‡(;h956*2(5*—h)8¶8*;h069285);)6†8)h‡‡;1(‡9;h8081;8:8‡
+1;h8†85;h)h85†528806*81(‡9;h8;(88;h(‡?3h;h8)h‡;161;:188;‡?;
+
+Pode-se analisar que os termos '6*' e '5*' também tem várias repetições. Isso pode indicar, conforme
+a frequencia dos caracteres em inglês, que podem ser 'in' e 'an'. Sendo assim, podemos assumir
+'*' = 'n', '5' = 'a' e '6' = 'i'
+
+Assim encontramos o termo 'an†', que pode representar a palavra 'and', muito comum em inglês. Assumindo
+'†' = 'd'
+
+Dentre maior frequência, ainda temos os caracteres ')' e '‡', que também tem termos duplicados. Como em uma
+parte da mensagem temos '‡‡d', que possivelmente indica uma vogal. Assume-se '‡' = 'o' e ')' como 's',
+por ser uma consoantes muito comum em duplicações.
+
+Após essas modificações, temos:
+
+a3ood30assinthe2isho.shoste0inthede¶i0sseatt]ent:onede3(eesandthi(teen9i
+n?tesno(theastand2:no(th9ain2(an—hse¶enth0i92eastsideshoot1(o9the0e1te:eo
+1thedeathsheada2ee0ine1(o9thet(eeth(o?3htheshot1i1t:1eeto?t
+
+No final da primeira linha, temos o termo 'thi(teen9i'. Isso pode nos sugerir que o '(' é a letra 'r',
+já que possivelmente significa treze em inglês (thirteen)
+
+Ainda temos uma vogal a ser inserida, que pode assumir o valor '?'. No termo 'thro?3h' isso pode significar a palavra 'through', alterando '?' = 'u' e '3' = 'g'
+
+Nessa etapa, já sendo possível identificar mais palavras, podemos colocar espaços onde eles podem estar:
+
+a good g0ass in the 2isho.shoste0 in the de ¶i0sseatt]ent:one degrees and thirteen 9inutes
+northeast and 2: north 9ain2ran—hse ¶enth0i92 east side shoot 1ro9the0e1te:eo1
+the deaths head a2ee0ine1ro9 the tree through the shot 1i1t:1eetout
+
+Agora analisando o termo 't]ent: one', podemos assumir que foi dito o número vinte e um, 'twenty one'
+Assim, ']' = 'w' e ':' = 'y'.
+
+Em outras duas palavras podemos decifrar mais substituições. No termo '1rom', podemos assumir 'l'='f'
+que indica 'from'. Já no termo '0eft', podemos trocar '0'='l' para gerar a palavra 'left'. Também podemos
+analisar a palavra '9inutes', que possivelmente indica '9'='m'.
+
+Assim, temos:
+
+a good glass in the 2isho.s hostel in the de¶ils seat twentyone degrees and thirteen minutes
+northeast and 2y north main 2ran—h se¶enth lim2 east side shoot from the left eye of
+the deaths head a2eeline from the tree through the shot fifty feet out
+
+Agora, atentando aos temos 'se¶enth' e '2y' (próximo ao termo 'north') podem indicar que '¶'='v' e '2'='b'.
+
+Finalmente, temos 'bran—h', que pode significar 'branch', colocando '-' = 'c' e resta o '.', que sugere
+a letra 'p', pois temos o termo 'bisho.s' que pode significar 'bishops'.
+
+Assim, podemos ter a mensagem totalmente descriptografada:
+
+A good glass in the bishops hostel in the devils seat twenty-one degrees and thirteen minutes
+northeast and by north main branch seventh limb east side shoot from the left eye of the deaths
+head a bee line from the tree through the shot fifty feet out.

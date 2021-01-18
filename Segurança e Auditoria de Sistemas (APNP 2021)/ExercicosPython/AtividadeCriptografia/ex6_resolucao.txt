@@ -1,0 +1,28 @@
+Resolução do EX6:
+
+Mensagem: Must see you over Cadogan West. Coming at once.
+
+Chave da Matriz: mfhikunopqzvwxyelargdst
+
+Processo:
+ - mu -> uz : Encontrou na coluna
+ - st -> tb : Encontrou na coluna
+ - se -> dl : Não encontrou na linha nem coluna
+ - ey -> gz : Não encontrou na linha nem coluna
+ - ou -> pn : Encontrou na linha
+ - ov -> nw : Não encontrou na linha nem coluna
+ - er -> lg : Encontrou na linha
+ - ca -> tg : Não encontrou na linha nem coluna
+ - do -> tu : Não encontrou na linha nem coluna
+ - ga -> er : Encontrou na linha
+ - nw -> ov : Não encontrou na linha nem coluna
+ - es -> ld : Não encontrou na linha nem coluna
+ - tc -> bd : Encontrou na linha
+ - om -> uh : Não encontrou na linha nem coluna
+ - i/jn -> fp : Não encontrou na linha nem coluna
+ - ga -> er : Encontrou na linha
+ - to -> hw : Encontrou na coluna
+ - nc -> qs : Não encontrou na linha nem coluna
+ - ex -> rz : Não encontrou na linha nem coluna
+
+Texto Criptografado: uztbdlgzpnnwlgtgtuerovldbduhfperhwqsrz
