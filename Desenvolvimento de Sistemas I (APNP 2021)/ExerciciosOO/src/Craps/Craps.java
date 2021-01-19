@@ -29,8 +29,7 @@ estáticas  e  a  enum  declaradas  (pesquise  sobre  enumerações).  Por que s
     (Somando 1 pois, o 0 não faz parte do dado)
 
 4 - Modifique  o  jogo  para  que  os  dados  sejam  viciados  e  sempre  retorne  um valor fixo de soma.
-
-
+    Linha 90
 
  */
 
@@ -88,8 +87,13 @@ public class Craps {
     }
 
     private static int rollDice() {
-        int die1 = 1 + randomNumbers.nextInt(6);
-        int die2 = 1 + randomNumbers.nextInt(6);
+        //int die1 = 1 + randomNumbers.nextInt(6);
+        //int die2 = 1 + randomNumbers.nextInt(6);
+
+        // Aplicando o Exercício 4 (Sempre irá perder)
+        int die1 = 1 + randomNumbers.nextInt(1);
+        int die2 = 1 + randomNumbers.nextInt(1);
+
         int sum = die1 + die2;
 
         System.out.println("Soma: " + sum);

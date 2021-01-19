@@ -2,7 +2,9 @@ package Biblioteca;
 
 import IED.Data;
 
-public class Autor {
+import java.io.Serializable;
+
+public class Autor implements Serializable  {
     private String nome;
     private String email;
     private String nacionalidade;
@@ -13,6 +15,10 @@ public class Autor {
         this.email = email;
         this.nacionalidade = nacionalidade;
         this.dataNacimento = dataNacimento;
+    }
+
+    public Autor(String nome) {
+        this.nome = nome;
     }
 
     public String getNome() {

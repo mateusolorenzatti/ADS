@@ -1,6 +1,8 @@
 package Biblioteca;
 
-public class Obra {
+import java.io.Serializable;
+
+public class Obra implements Serializable {
     private String titulo;
     private String midia;
     private String genero;
@@ -18,6 +20,12 @@ public class Obra {
         this.ano = ano;
         this.autor = autor;
         this.editora = editora;
+    }
+
+    public Obra(String titulo, String genero, Autor autor) {
+        this.titulo = titulo;
+        this.genero = genero;
+        this.autor = autor;
     }
 
     public String getTitulo() {

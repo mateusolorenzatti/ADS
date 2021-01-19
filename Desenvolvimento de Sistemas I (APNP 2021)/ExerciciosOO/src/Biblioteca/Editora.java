@@ -1,6 +1,8 @@
 package Biblioteca;
 
-public class Editora {
+import java.io.Serializable;
+
+public class Editora implements Serializable  {
     private String nome;
     private String email;
     private String endereco;

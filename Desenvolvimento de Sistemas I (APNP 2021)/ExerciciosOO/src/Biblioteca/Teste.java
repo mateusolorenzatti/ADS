@@ -12,6 +12,5 @@ public class Teste {
         Editora editora = new Editora("Novo Mundo", "editoranovomundo@yahoo.com", "Rua B, Porto Alegre", "3526256360000123");
 
         Obra livro = new Obra("1984", "Livro Impresso / Entretenimento", "Ficção Política", "Portugês", "1949", autor, editora);
-
     }
 }
