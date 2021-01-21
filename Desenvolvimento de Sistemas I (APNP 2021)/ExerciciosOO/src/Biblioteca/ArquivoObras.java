@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class ArquivoObras {
 
-    public static void escreverObras(ArrayList<Obra> obras) {
+    public static void salvar(ArrayList<Obra> obras) {
         try {
             File f = new File("obras.bin");
             if (!f.exists()) {
@@ -24,7 +24,7 @@ public class ArquivoObras {
         }
     }
 
-    public static ArrayList<Obra> lerObras() {
+    public static ArrayList<Obra> abrir() {
         ArrayList<Obra> res = null;
 
         try {
