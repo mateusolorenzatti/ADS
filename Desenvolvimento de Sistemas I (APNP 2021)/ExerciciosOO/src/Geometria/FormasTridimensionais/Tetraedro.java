@@ -13,4 +13,9 @@ public class Tetraedro extends FormaTridimensional{
     public float calculaVolume() {
         return (float) (Math.pow(this.aresta, 3) * Math.sqrt(2)) / 12;
     }
+
+    @Override
+    public void mostrarNomeDaForma() {
+        System.out.println(" TETRAEDRO ");
+    }
 }

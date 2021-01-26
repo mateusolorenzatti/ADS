@@ -18,8 +18,9 @@ public class Quadrado extends FormaBidimencional implements Desenho {
 
     @Override
     public void desenho() {
-        System.out.println(" QUADRADO \n");
+        this.mostrarNomeDaForma();
 
+        System.out.println("\n");
         System.out.println(" Minha área: " + this.calculaArea() + "\n");
         System.out.println("         ...............         ");
         System.out.println("         ...............         ");
@@ -27,5 +28,10 @@ public class Quadrado extends FormaBidimencional implements Desenho {
         System.out.println("         ...............         ");
         System.out.println("         ...............         ");
         System.out.println("         ...............         ");
+    }
+
+    @Override
+    public void mostrarNomeDaForma() {
+        System.out.println(" QUADRADO ");
     }
 }

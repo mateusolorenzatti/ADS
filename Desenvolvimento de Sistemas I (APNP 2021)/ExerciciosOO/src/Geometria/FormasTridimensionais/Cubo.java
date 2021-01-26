@@ -11,6 +11,11 @@ public class Cubo extends FormaTridimensional{
 
     @Override
     public float calculaVolume() {
-        return (float) Math.pow(this.lado, 2);
+        return (float) Math.pow(this.lado, 3);
+    }
+
+    @Override
+    public void mostrarNomeDaForma() {
+        System.out.println(" CUBO ");
     }
 }

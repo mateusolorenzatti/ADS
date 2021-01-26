@@ -55,8 +55,9 @@ public class Triangulo extends FormaBidimencional implements Desenho {
 
     @Override
     public void desenho() {
-        System.out.println(" TRIANGULO \n");
+        this.mostrarNomeDaForma();
 
+        System.out.println("\n");
         System.out.println(" Minha área: " + this.calculaArea());
         System.out.println(" Sou do tipo: " + this.tipo + "\n");
         System.out.println("                .                ");
@@ -67,5 +68,10 @@ public class Triangulo extends FormaBidimencional implements Desenho {
         System.out.println("           ...........           ");
         System.out.println("          .............          ");
         System.out.println("         ...............         ");
+    }
+
+    @Override
+    public void mostrarNomeDaForma() {
+        System.out.println(" TRIANGULO ");
     }
 }

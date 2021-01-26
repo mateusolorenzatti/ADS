@@ -13,4 +13,9 @@ public class Esfera extends FormaTridimensional{
     public float calculaVolume() {
         return (float) ( 4/3 * Math.PI * (Math.pow(this.raio, 3)) );
     }
+
+    @Override
+    public void mostrarNomeDaForma() {
+        System.out.println(" ESFERA ");
+    }
 }
