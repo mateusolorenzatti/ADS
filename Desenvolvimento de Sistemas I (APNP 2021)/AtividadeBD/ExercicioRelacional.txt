@@ -1,0 +1,13 @@
+(Parêntesis dentro indica chave primária)
+
+Loja((codLoja), numero, endereco)
+
+Requisicao((idReq), data, hora, quantidade, #idLoja, #idProduto)
+
+Produto((idProduto), codigo, nome, descricao, precoUnitario)
+
+ItemVenda((#idProduto, #idVenda), quantidade)
+
+Venda((idVenda), data, hora)
+
+VendaLoja((#idLoja, #idVenda))
