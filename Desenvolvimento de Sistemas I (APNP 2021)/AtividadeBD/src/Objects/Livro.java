@@ -6,11 +6,15 @@ public class Livro {
     private String genero;
     private String idioma;
     private String ano;
+    private String ISBN;
 
     private String autor;
     private String editora;
 
-    public Livro(String titulo, String midia, String genero, String idioma, String ano, String autor, String editora) {
+    public Livro() {
+    }
+
+    public Livro(String ISBN, String titulo, String midia, String genero, String idioma, String ano, String autor, String editora) {
         this.titulo = titulo;
         this.midia = midia;
         this.genero = genero;
@@ -24,6 +28,14 @@ public class Livro {
         this.titulo = titulo;
         this.genero = genero;
         this.autor = autor;
+    }
+
+    public String getISBN() {
+        return ISBN;
+    }
+
+    public void setISBN(String ISBN) {
+        this.ISBN = ISBN;
     }
 
     public String getTitulo() {
@@ -92,6 +104,7 @@ public class Livro {
                 ", ano='" + ano + '\'' +
                 ", autor='" + autor + '\'' +
                 ", editora='" + editora + '\'' +
+                ", ISBN='" + ISBN + '\'' +
                 '}';
     }
 
@@ -100,6 +113,6 @@ public class Livro {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Livro livro = (Livro) o;
-        return this.titulo == livro.titulo;
+        return this.ISBN == livro.ISBN;
     }
 }
