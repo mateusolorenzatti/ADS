@@ -61,70 +61,82 @@ public class Dao_Livro<T> implements Dao<T> {
 
     @Override
     public void altera(T c) throws SQLException{
-        Aluno contato = (Aluno) c;
+        Livro livro = (Livro) c;
+
         String sql = SQL_Constantes.UPDATE_LIVRO;
+
         try (Connection connection = ConnectionFactory.getConnection();
              PreparedStatement stmt = connection.prepareStatement(sql)) {
-            stmt.setFloat(1, contato.getNota1());
-            stmt.setFloat(2, contato.getNota2());
-            stmt.setFloat(3, contato.getNota3());
-            stmt.setFloat(4, contato.getMedia());
-            stmt.setInt(5, contato.getMatricula());
+
+            stmt.setString(1, livro.getMidia());
+            stmt.setString(2, livro.getGenero());
+            stmt.setString(3, livro.getIdioma());
+            stmt.setString(4, livro.getAno());
+            stmt.setString(5, livro.getAutor());
+            stmt.setString(6, livro.getEditora());
+            stmt.setString(7, livro.getTitulo());
+            stmt.setString(8, livro.getISBN());
+
             stmt.execute();
         }
     }
 
     @Override
     public void remove(T c) throws SQLException{
-        Aluno contato = (Aluno) c;
+        Livro livro = (Livro) c;
+
         try (Connection connection = ConnectionFactory.getConnection();
-             PreparedStatement stmt = connection.prepareStatement(SQL_Constantes.REMOVE)){
-            stmt.setInt(1, contato.getMatricula());
+             PreparedStatement stmt = connection.prepareStatement(SQL_Constantes.REMOVE_LIVRO)){
+
+            stmt.setString(1, livro.getISBN());
+
             stmt.execute();
         }
     }
 
     @Override
     public boolean pesquisa(T c) throws SQLException{
-        Aluno contato = (Aluno) c;
+        Livro livro = (Livro) c;
         List<T> todos = pesquisaTodos();
 
         for (Object cc : todos) {
-            if (((Aluno)cc).equals(contato)) {
+            if (((Livro)cc).equals(livro)) {
                 return true;
             }
         }
         return false;
     }
 
-    public int buscaId(T modelo) throws SQLException{
-        List<Object> contatos = new Dao_Aluno().pesquisaTodos();
+    public String buscaId(T modelo) throws SQLException{
+        List<Object> livros = new Dao_Livro().pesquisaTodos();
 
-        for (Object mod : contatos) {
-            Aluno c = (Aluno) mod;
-            if (((Aluno)modelo).getNome().equals(c.getNome()))
-                return c.getMatricula();
+        for (Object mod : livros) {
+            Livro l = (Livro) mod;
+
+            if (((Livro)modelo).getISBN().equals(l.getISBN()))
+                return l.getISBN();
         }
-        return -1;
+        return "";
     }
 
-    public int buscaId(String nome) throws SQLException{
-        List<Object> contatos = new Dao_Aluno().pesquisaTodos();
+    public String buscaId(String nome) throws SQLException{
+        List<Object> contatos = new Dao_Livro().pesquisaTodos();
 
         for (Object mod : contatos) {
-            Aluno c = (Aluno) mod;
-            if (nome.equals(c.getNome()))
-                return c.getMatricula();
+            Livro l = (Livro) mod;
+
+            if (nome.equals(l.getTitulo()))
+                return l.getISBN();
         }
-        return -1;
+        return "";
     }
 
-    public Aluno pesquisaAluno(String nome) throws SQLException{
-        List<T> contatos = new Dao_Aluno().pesquisaTodos();
+    public Livro pesquisaLivro(String nome) throws SQLException{
+        List<T> contatos = new Dao_Livro().pesquisaTodos();
 
         for (Object mod : contatos) {
-            Aluno c = (Aluno) mod;
-            if (c.getNome().equals(nome))
+            Livro c = (Livro) mod;
+            if (c.getTitulo().equals(nome))
                 return c;
         }
         return null;

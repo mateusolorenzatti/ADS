@@ -15,6 +15,7 @@ public class Livro {
     }
 
     public Livro(String ISBN, String titulo, String midia, String genero, String idioma, String ano, String autor, String editora) {
+        this.ISBN = ISBN;
         this.titulo = titulo;
         this.midia = midia;
         this.genero = genero;
@@ -24,10 +25,11 @@ public class Livro {
         this.editora = editora;
     }
 
-    public Livro(String titulo, String genero, String autor) {
+    public Livro(String titulo, String genero, String autor, String ISBN) {
         this.titulo = titulo;
         this.genero = genero;
         this.autor = autor;
+        this.ISBN = ISBN;
     }
 
     public String getISBN() {

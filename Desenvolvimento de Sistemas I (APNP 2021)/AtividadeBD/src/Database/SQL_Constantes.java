@@ -7,17 +7,28 @@ package Database;
 
 /**
  * @author coelho
- * <p>
- * create table Livro (
- * id SERIAL PRIMARY KEY,
- * titulo VARCHAR(40) NULL,
- * midia VARCHAR(40) NULL,
- * genero VARCHAR(40) NULL,
- * idioma VARCHAR(40) NULL,
- * ano DATE NULL,
- * autor VARCHAR(80) NULL,
- * editora VARCHAR(80) NULL
- * )
+
+-- public.livro definition
+
+-- Drop table
+
+-- DROP TABLE public.livro;
+
+CREATE TABLE public.livro (
+id serial NOT NULL,
+midia varchar(40) NULL,
+genero varchar(40) NULL,
+idioma varchar(40) NULL,
+ano varchar(10) NULL,
+autor varchar(80) NULL,
+editora varchar(80) NULL,
+titulo varchar(40) NULL,
+isbn varchar(40) NULL,
+CONSTRAINT livro_isbn_key UNIQUE (isbn),
+CONSTRAINT livro_pkey PRIMARY KEY (id),
+CONSTRAINT livro_titulo_key UNIQUE (titulo)
+);
+
  */
 
 
@@ -41,7 +52,7 @@ public class SQL_Constantes {
             "VALUES(?, ?, ?, ?, ?, ?, ?, ?);\n";
 
     public static final String UPDATE_LIVRO = "UPDATE public.livro" +
-            "SET midia='', genero='', idioma='', ano='', autor='', editora='', titulo=''" +
+            "SET midia=?, genero=?, idioma=?, ano=?, autor=?, editora=?, titulo=?" +
             "WHERE isbn=?";
 
     public static final String REMOVE_LIVRO = "delete from public.livro where isbn=?";
