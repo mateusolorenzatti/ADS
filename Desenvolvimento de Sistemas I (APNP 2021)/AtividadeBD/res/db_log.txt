@@ -1,0 +1,50 @@
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 03/02/2021 21:10:33
+ Descricao:  Erro ao alterar os dados!
+ Stack Trace: org.postgresql.util.PSQLException: ERROR: syntax error at or near "="
+  Position: 29
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:164)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:153)
+	at DAO.Dao_Livro.altera(Dao_Livro.java:80)
+	at Main.GerenciarLivros.main(GerenciarLivros.java:57)
+
+ ------------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 03/02/2021 21:27:21
+ Descricao:  Erro ao alterar os dados!
+ Stack Trace: org.postgresql.util.PSQLException: ERROR: syntax error at or near "="
+  Position: 29
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:164)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:153)
+	at DAO.Dao_Livro.altera(Dao_Livro.java:83)
+	at Main.GerenciarLivros.main(GerenciarLivros.java:57)
+
+ ------------------------------------------------------------------------------------ 
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 03/02/2021 21:35:12
+ Descricao: Erro ao conectar no banco de dados!
+ Stack Trace: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "aula"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:613)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:161)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:225)
+	at org.postgresql.Driver.makeConnection(Driver.java:465)
+	at org.postgresql.Driver.connect(Driver.java:264)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at Database.ConnectionFactory.getConnection(ConnectionFactory.java:17)
+	at DAO.Dao_Livro.pesquisaTodos(Dao_Livro.java:40)
+	at Main.GerenciarLivros.main(GerenciarLivros.java:43)
+
+ ------------------------------------------------------------------------------------ 

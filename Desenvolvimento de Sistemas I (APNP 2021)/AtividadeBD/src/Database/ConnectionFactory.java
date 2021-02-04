@@ -1,5 +1,7 @@
 package Database;
 
+import Log.Logger;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -15,20 +17,24 @@ public class ConnectionFactory {
                     .getConnection("jdbc:postgresql://localhost:5432/ADS",
                             "aula", "aula");
 
-            System.out.println("Conectado!");
+            //System.out.println("Conectado!");
             return con;
 
         } catch (SQLException e) {
-            System.out.println("Erro ao conectar no banco de dados!");
-            e.printStackTrace();
+            Logger.logar("Erro ao conectar no banco de dados!", e);
+
+             System.out.println("Erro ao conectar no banco de dados!");
+            // e.printStackTrace();
+
         }catch (ClassNotFoundException cnf) {
-            System.out.println("Erro ao conectar no banco de dados!");
-            cnf.printStackTrace();
+            Logger.logar("Erro ao conectar no banco de dados!", cnf);
         }
         return null;
     }
 
     public static void main(String[] args) {
         getConnection();
+
+        Logger.logar("Sucesso!");
     }
 }

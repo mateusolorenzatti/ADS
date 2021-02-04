@@ -15,7 +15,7 @@ package Database;
 -- DROP TABLE public.livro;
 
 CREATE TABLE public.livro (
-id serial NOT NULL,
+isbn varchar(40) NULL,
 midia varchar(40) NULL,
 genero varchar(40) NULL,
 idioma varchar(40) NULL,
@@ -23,11 +23,10 @@ ano varchar(10) NULL,
 autor varchar(80) NULL,
 editora varchar(80) NULL,
 titulo varchar(40) NULL,
-isbn varchar(40) NULL,
 CONSTRAINT livro_isbn_key UNIQUE (isbn),
-CONSTRAINT livro_pkey PRIMARY KEY (id),
+CONSTRAINT livro_pkey PRIMARY KEY (isbn),
 CONSTRAINT livro_titulo_key UNIQUE (titulo)
-);
+)
 
  */
 
@@ -51,11 +50,10 @@ public class SQL_Constantes {
             "(midia, genero, idioma, ano, autor, editora, titulo, isbn)\n" +
             "VALUES(?, ?, ?, ?, ?, ?, ?, ?);\n";
 
-    public static final String UPDATE_LIVRO = "UPDATE public.livro" +
-            "SET midia=?, genero=?, idioma=?, ano=?, autor=?, editora=?, titulo=?" +
-            "WHERE isbn=?";
+    public static final String UPDATE_LIVRO = "UPDATE public.livro " +
+            "SET midia=?, genero=?, idioma=?, ano=?, autor=?, editora=?, titulo=? WHERE isbn=?";
 
-    public static final String REMOVE_LIVRO = "delete from public.livro where isbn=?";
+    public static final String REMOVE_LIVRO = "delete from public.livro where isbn=?;";
 
     public static final String SEARCH_LIVRO = "SELECT midia, genero, idioma, ano, autor, editora, titulo, isbn\n" +
             "FROM public.livro;\n";

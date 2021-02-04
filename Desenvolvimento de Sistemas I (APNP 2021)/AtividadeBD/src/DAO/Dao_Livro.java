@@ -75,6 +75,7 @@ public class Dao_Livro<T> implements Dao<T> {
             stmt.setString(5, livro.getAutor());
             stmt.setString(6, livro.getEditora());
             stmt.setString(7, livro.getTitulo());
+
             stmt.setString(8, livro.getISBN());
 
             stmt.execute();

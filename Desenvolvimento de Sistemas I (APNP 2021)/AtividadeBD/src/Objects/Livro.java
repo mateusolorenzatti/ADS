@@ -99,14 +99,14 @@ public class Livro {
     @Override
     public String toString() {
         return "Livro{" +
-                "titulo='" + titulo + '\'' +
+                "ISBN='" + ISBN + '\'' +
+                ", titulo='" + titulo + '\'' +
                 ", midia='" + midia + '\'' +
                 ", genero='" + genero + '\'' +
                 ", idioma='" + idioma + '\'' +
                 ", ano='" + ano + '\'' +
                 ", autor='" + autor + '\'' +
                 ", editora='" + editora + '\'' +
-                ", ISBN='" + ISBN + '\'' +
                 '}';
     }
 
