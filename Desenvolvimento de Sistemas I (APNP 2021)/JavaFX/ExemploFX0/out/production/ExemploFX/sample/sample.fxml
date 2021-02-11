@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <ScrollPane prefHeight="616.0" prefWidth="524.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Pane prefHeight="616.0" prefWidth="524.0">
+                     <children>
+                        <Button fx:id="meu_botao" layoutX="180.0" layoutY="203.0" mnemonicParsing="false" onAction="#quando_clicado" prefHeight="40.0" prefWidth="157.0" text="Clique aqui" />
+                        <Text fx:id="meu_texto" layoutX="168.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Olá, caro usuário!" wrappingWidth="272.22900390625">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</GridPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<GridPane alignment="center" hgap="10" prefHeight="410.0" prefWidth="491.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="549.0" prefWidth="563.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <RadioButton fx:id="radio1" layoutX="45.0" layoutY="55.0" mnemonicParsing="false" text="Opção 1" />
+            <RadioButton fx:id="radio2" layoutX="45.0" layoutY="95.0" mnemonicParsing="false" text="Opção 2" />
+            <RadioButton fx:id="radio3" layoutX="45.0" layoutY="136.0" mnemonicParsing="false" text="Opção 3" />
+            <ChoiceBox fx:id="choicebox" layoutX="45.0" layoutY="192.0" prefWidth="150.0" />
+            <Button onAction="#ok" layoutX="61.0" layoutY="274.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="OK" />
+            <TextArea fx:id="texto" layoutX="222.0" layoutY="36.0" prefHeight="188.0" prefWidth="236.0" />
+            <Button onAction="#fechar" layoutX="273.0" layoutY="274.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" text="Fechar" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>

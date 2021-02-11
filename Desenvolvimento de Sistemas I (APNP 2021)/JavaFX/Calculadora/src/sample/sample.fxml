@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="479.0" prefWidth="367.0" style="-fx-background-color: #444d51;">
+         <children>
+            <TextArea layoutX="39.0" layoutY="27.0" prefHeight="90.0" prefWidth="290.0" />
+            <VBox alignment="CENTER" layoutX="43.0" layoutY="138.0" prefHeight="318.0" prefWidth="281.0" style="-fx-border-color: white;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="74.0" prefWidth="315.0" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="7" />
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="8" />
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="9" />
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="/" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="74.0" prefWidth="315.0" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="4" />
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="5" />
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="6" />
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="-" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="74.0" prefWidth="315.0" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="1" />
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="2" />
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="3" />
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="*" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="74.0" prefWidth="315.0" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="0" />
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="," />
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="=" />
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: #90918f;" text="+" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</GridPane>

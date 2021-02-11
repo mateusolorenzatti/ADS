@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="320.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlesbasicos.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <AnchorPane layoutX="28.0" layoutY="270.0">
+         <children>
+            <Button fx:id="sair_button" layoutX="-13.0" layoutY="1.0" mnemonicParsing="false" onAction="#sair_button_event" prefWidth="80.0" text="Sair" />
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="text_area" layoutX="6.0" layoutY="70.0" prefHeight="179.0" prefWidth="188.0" />
+      <TextField fx:id="text_field" layoutX="4.0" layoutY="35.0" prefHeight="27.0" prefWidth="192.0" text="Digite algo...">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutY="12.0" prefHeight="17.0" prefWidth="201.0" text="Sou um Rótulo de Texto">
+         <font>
+            <Font name="American Typewriter Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="ok_button" layoutX="101.0" layoutY="271.0" mnemonicParsing="false" onAction="#ok_button_event" prefWidth="80.0" text="Adicionar" />
+    </children>
+</AnchorPane>
