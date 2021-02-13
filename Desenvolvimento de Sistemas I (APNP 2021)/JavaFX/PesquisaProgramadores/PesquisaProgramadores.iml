@@ -10,7 +10,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../../../lib/javafx-sdk-11.0.2/lib/javafx.controls.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../lib/javafx-sdk-11.0.2/lib/javafx-swt.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -28,7 +28,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../../../lib/javafx-sdk-11.0.2/lib/javafx-swt.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../lib/javafx-sdk-11.0.2/lib/javafx.controls.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -74,6 +74,15 @@
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../../../../lib/javafx-sdk-11.0.2/lib/javafx.web.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../../../lib/javafx-sdk-11.0.2/charm-glisten-4.4.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

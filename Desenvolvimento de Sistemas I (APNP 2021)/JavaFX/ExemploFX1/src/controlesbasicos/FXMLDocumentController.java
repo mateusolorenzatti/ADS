@@ -7,6 +7,8 @@ package controlesbasicos;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import Log.Logger;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -27,6 +29,8 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void sair_button_event(ActionEvent event) {
+        Logger.logar(text_area.getText());
+
         Platform.exit();
     }
 

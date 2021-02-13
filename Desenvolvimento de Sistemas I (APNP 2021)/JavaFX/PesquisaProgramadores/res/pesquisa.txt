@@ -1,0 +1,64 @@
+ Data/Hora: 13/02/2021 16:39:41
+ Dados da Pesquisa:
+   Nome: Mateus
+   SO: Linux
+   Linguagem Preferida: Python
+   Programa todo Dia? Sim
+   Gosta de Programação? Sim
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 13/02/2021 16:39:49
+ Dados da Pesquisa:
+   Nome: Alberto
+   SO: Windows
+   Linguagem Preferida: C
+   Programa todo Dia? Nao
+   Gosta de Programação? Nao
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 13/02/2021 16:39:56
+ Dados da Pesquisa:
+   Nome: Vinicius
+   SO: Windows
+   Linguagem Preferida: Python
+   Programa todo Dia? Nao
+   Gosta de Programação? Sim
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 13/02/2021 16:40:10
+ Dados da Pesquisa:
+   Nome: Sofia
+   SO: Mac
+   Linguagem Preferida: Java
+   Programa todo Dia? Sim
+   Gosta de Programação? Sim
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 13/02/2021 16:40:30
+ Dados da Pesquisa:
+   Nome: Leticia
+   SO: Linux
+   Linguagem Preferida: Java
+   Programa todo Dia? Sim
+   Gosta de Programação? Nao
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 13/02/2021 16:43:36
+ Dados da Pesquisa:
+   Nome: Teste
+   SO: Mac
+   Linguagem Preferida: C
+   Programa todo Dia? Sim
+   Gosta de Programação? Nao
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 13/02/2021 16:44:07
+ Dados da Pesquisa:
+   Nome: Melao
+   SO: Linux
+   Linguagem Preferida: Java
+   Programa todo Dia? Sim
+   Gosta de Programação? Nao
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 13/02/2021 16:44:50
+ Dados da Pesquisa:
+   Nome: Luciane
+   SO: Mac
+   Linguagem Preferida: C
+   Programa todo Dia? Sim
+   Gosta de Programação? Nao
+ ------------------------------------------------------------------------------------ 
