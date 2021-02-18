@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import tabela1.FormattedTableCellFactory?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.collections.FXCollections?>
+<?import tabela1.Person?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<GridPane alignment="CENTER" hgap="10.0" prefHeight="492.0" prefWidth="653.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="tabela1.FXMLTableViewController">
+  <padding>
+    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+  </padding>
+   <children>
+     <Label style="-fx-font: NORMAL 20 Tahoma;" text="Address Book" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+     <TableView fx:id="tableView" prefHeight="353.0" prefWidth="387.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+         <columns>
+         <TableColumn fx:id="firstNameColumn" prefWidth="100.0" text="First Name">
+           <cellFactory>
+             <FormattedTableCellFactory alignment="CENTER" />
+           </cellFactory>
+           <cellValueFactory>
+             <PropertyValueFactory property="firstName" />
+           </cellValueFactory>
+         </TableColumn>
+         <TableColumn prefWidth="100.0" text="Last Name">
+           <cellValueFactory>
+             <PropertyValueFactory property="lastName" />
+           </cellValueFactory>
+         </TableColumn>
+         <TableColumn prefWidth="61.0" text="Email">
+           <cellValueFactory>
+             <PropertyValueFactory property="email" />
+           </cellValueFactory>
+         </TableColumn>
+       </columns>
+       <items>
+         <FXCollections fx:factory="observableArrayList">
+           <Person email="jacob.smith@example.com" firstName="Jacob" lastName="Smith" />
+           <Person email="isabella.johnson@example.com" firstName="Isabella" lastName="Johnson" />
+           <Person email="ethan.williams@example.com" firstName="Ethan" lastName="Williams" />
+           <Person email="emma.jones@example.com" firstName="Emma" lastName="Jones" />
+           <Person email="michael.brown@example.com" firstName="Michael" lastName="Brown" />
+         </FXCollections>
+       </items>
+       <sortOrder>
+         <fx:reference source="firstNameColumn" />
+       </sortOrder>
+     </TableView>
+     <HBox alignment="BOTTOM_RIGHT" spacing="10.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <children>
+          <TextField fx:id="firstNameField" prefHeight="27.0" prefWidth="131.0" promptText="First" />
+          <TextField fx:id="lastNameField" prefHeight="27.0" prefWidth="124.0" promptText="Last" />
+          <TextField fx:id="emailField" prefHeight="27.0" prefWidth="128.0" promptText="Email" />
+        </children>
+     </HBox>
+      <AnchorPane prefHeight="353.0" prefWidth="342.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Label layoutX="26.0" layoutY="55.0" text="First Name" />
+            <Label layoutX="26.0" layoutY="88.0" text="Last Name" />
+            <Label layoutX="27.0" layoutY="129.0" text="Email" />
+            <Label fx:id="email" layoutX="119.0" layoutY="129.0" prefHeight="17.0" prefWidth="153.0" />
+            <Label fx:id="last_name" layoutX="119.0" layoutY="88.0" prefHeight="17.0" prefWidth="153.0" />
+            <Label fx:id="first_name" layoutX="119.0" layoutY="55.0" prefHeight="17.0" prefWidth="153.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane GridPane.rowIndex="4">
+         <children>
+          <Button fx:id="add" alignment="CENTER" contentDisplay="CENTER" layoutX="245.0" onAction="#addPerson" prefHeight="27.0" prefWidth="89.0" text="Add" GridPane.rowIndex="3" />
+         </children>
+      </AnchorPane>
+      <Label text="Detalhes" GridPane.columnIndex="1">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <Button fx:id="delete" alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" onAction="#deletePerson" prefHeight="27.0" prefWidth="89.0" text="Delete" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="edit" alignment="CENTER" contentDisplay="CENTER" layoutX="162.0" onAction="#editPerson" prefHeight="27.0" prefWidth="89.0" text="Edit" />
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

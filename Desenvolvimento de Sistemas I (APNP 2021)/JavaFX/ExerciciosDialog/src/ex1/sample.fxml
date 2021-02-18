@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="323.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ex1.Controller">
+   <children>
+      <Button fx:id="info" layoutX="130.0" layoutY="68.0" mnemonicParsing="false" onAction="#mostrarInfo" text="Mostrar Dilogo de Informaçao" />
+      <Button fx:id="erro" layoutX="154.0" layoutY="143.0" mnemonicParsing="false" onAction="#mostrarErro" text="Mostrar Dilogo de Erro" />
+      <Button fx:id="aviso" layoutX="150.0" layoutY="213.0" mnemonicParsing="false" onAction="#mostrarAviso" text="Mostrar Dilogo de Aviso" />
+   </children>
+</Pane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" 
+    xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+    fx:controller="janelas.FXMLDocumentController">
+    <children>
+      <Button fx:id="button1" layoutX="60.0" layoutY="165.0" 
+        onAction="#handleButtonAction1" text="Janela 1" />
+      <Button fx:id="button2" layoutX="190.0" layoutY="165.0" 
+      onAction="#handleButtonAction2" text="Janela 2" />
+    </children>
+</AnchorPane>

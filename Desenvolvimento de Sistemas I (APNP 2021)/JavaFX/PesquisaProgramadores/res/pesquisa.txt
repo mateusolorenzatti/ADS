@@ -62,3 +62,19 @@
    Programa todo Dia? Sim
    Gosta de Programação? Nao
  ------------------------------------------------------------------------------------ 
+ Data/Hora: 15/02/2021 21:22:00
+ Dados da Pesquisa:
+   Nome: Mateus
+   SO: Linux
+   Linguagem Preferida: C
+   Programa todo Dia? Sim
+   Gosta de Programação? Sim
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 15/02/2021 21:22:07
+ Dados da Pesquisa:
+   Nome: Rodrigo
+   SO: Windows
+   Linguagem Preferida: Python
+   Programa todo Dia? Nao
+   Gosta de Programação? Sim
+ ------------------------------------------------------------------------------------ 

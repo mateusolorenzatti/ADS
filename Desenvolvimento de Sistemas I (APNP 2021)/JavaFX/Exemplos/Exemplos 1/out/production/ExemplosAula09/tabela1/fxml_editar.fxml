@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="249.0" prefWidth="353.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="tabela1.Fxml_editarController">
+   <children>
+      <Button layoutX="206.0" layoutY="193.0" mnemonicParsing="false" onAction="#salvar" prefHeight="27.0" prefWidth="89.0" text="Save" />
+      <Button layoutX="58.0" layoutY="193.0" mnemonicParsing="false" onAction="#sair" prefHeight="27.0" prefWidth="89.0" text="Close" />
+      <Label layoutX="58.0" layoutY="51.0" text="First Name" />
+      <Label layoutX="58.0" layoutY="89.0" text="Last Name" />
+      <Label layoutX="58.0" layoutY="120.0" text="Email" />
+      <TextField fx:id="first_name" layoutX="148.0" layoutY="46.0" />
+      <TextField fx:id="last_name" layoutX="148.0" layoutY="84.0" />
+      <TextField fx:id="email" layoutX="148.0" layoutY="124.0" />
+   </children>
+</AnchorPane>

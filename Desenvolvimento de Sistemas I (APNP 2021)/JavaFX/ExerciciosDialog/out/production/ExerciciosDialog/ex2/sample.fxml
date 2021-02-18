@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ex2.Controller">
+   <children>
+      <Button fx:id="botaoNome" layoutX="262.0" layoutY="141.0" mnemonicParsing="false" onAction="#entradaNome" text="Entrar com nome " />
+      <Button fx:id="botaoRegiao" layoutX="261.0" layoutY="189.0" mnemonicParsing="false" onAction="#entradaRegiao" text="Regiao que Mora " />
+      <Button fx:id="botaoExercicio" layoutX="275.0" layoutY="240.0" mnemonicParsing="false" onAction="#entradaExercicio" text="Faz exercicio?" />
+      <Button fx:id="botaoResultados" layoutX="269.0" layoutY="314.0" mnemonicParsing="false" onAction="#exibirResultados" text="Ver Resultados" />
+      <Label layoutX="197.0" layoutY="85.0" text="Questionário Importante!">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
