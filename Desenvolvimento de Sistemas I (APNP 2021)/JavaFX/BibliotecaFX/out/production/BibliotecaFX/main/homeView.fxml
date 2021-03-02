@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.HomeController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="710.0" prefWidth="1297.0">
+         <children>
+            <VBox prefHeight="680.0" prefWidth="1297.0">
+               <children>
+                  <Pane prefHeight="97.0" prefWidth="865.0" style="-fx-background-color: #4ecdc4;">
+                     <children>
+                        <Text fill="#1a535c" layoutX="56.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BibliotecaFX">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="botaoSair" layoutX="1239.0" layoutY="35.0" mnemonicParsing="false" onAction="#sair" style="-fx-background-color: #FF6B6B;" text="Sair" />
+                        <Button fx:id="botaoInfo" layoutX="1180.0" layoutY="35.0" mnemonicParsing="false" onAction="#info" style="-fx-background-color: #FFE66D;" text="Info" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="67.0" prefWidth="1297.0">
+                     <children>
+                        <Button fx:id="botaoNovo" layoutX="31.0" layoutY="20.0" mnemonicParsing="false" onAction="#novo" style="-fx-background-color: #1A535C;" text="+ Novo Livro" textFill="#f5f5f5" />
+                     </children>
+                  </Pane>
+                  <HBox prefHeight="520.0" prefWidth="1297.0">
+                     <children>
+                        <TableView fx:id="tabelaLivros" prefHeight="519.0" prefWidth="848.0">
+                          <columns>
+                            <TableColumn fx:id="colunaISBN" prefWidth="75.0" text="ISBN" />
+                            <TableColumn fx:id="colunaTitulo" prefWidth="285.0" text="Titulo" />
+                              <TableColumn fx:id="colunaAutor" prefWidth="184.0" text="Autor" />
+                              <TableColumn fx:id="colunaAno" prefWidth="89.0" text="Ano" />
+                              <TableColumn fx:id="conulaEditora" prefWidth="214.0" text="Editora" />
+                          </columns>
+                        </TableView>
+                        <Pane fx:id="paneDados" prefHeight="519.0" prefWidth="449.0">
+                           <children>
+                              <VBox prefHeight="519.0" prefWidth="449.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="58.0" prefWidth="449.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dados do Livro">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="34.0" prefWidth="449.0" spacing="15.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo:">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="textTitulo" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="34.0" prefWidth="449.0" spacing="15.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Autor:">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="textAutor" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="34.0" prefWidth="449.0" spacing="15.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN:">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="textISBN" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="34.0" prefWidth="449.0" spacing="15.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ano:">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="textAno" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="34.0" prefWidth="449.0" spacing="15.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Idioma:">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="textIdioma" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="34.0" prefWidth="449.0" spacing="15.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Midia:">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="textMidia" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="34.0" prefWidth="449.0" spacing="15.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Genero:">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="textGenero" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="33.0" prefWidth="449.0">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="58.0" prefWidth="449.0">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Button fx:id="botaoEditar" mnemonicParsing="false" onAction="#editar" style="-fx-background-color: #FFE66D;" text="Editar Livro" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="58.0" prefWidth="449.0">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Button fx:id="botaoExcluir" mnemonicParsing="false" onAction="#excluir" style="-fx-background-color: #FF6B6B;" text="Excluir Livro" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane layoutY="683.0" prefHeight="32.0" prefWidth="1297.0" style="-fx-background-color: #4ecdc4;" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
