@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.HomeController">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.HomeController">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -21,7 +21,7 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Pane prefHeight="710.0" prefWidth="1297.0">
+      <Pane prefHeight="668.0" prefWidth="1297.0">
          <children>
             <VBox prefHeight="680.0" prefWidth="1297.0">
                <children>
@@ -38,20 +38,24 @@
                   </Pane>
                   <Pane prefHeight="67.0" prefWidth="1297.0">
                      <children>
-                        <Button fx:id="botaoNovo" layoutX="31.0" layoutY="20.0" mnemonicParsing="false" onAction="#novo" style="-fx-background-color: #1A535C;" text="+ Novo Livro" textFill="#f5f5f5" />
+                        <Button fx:id="botaoNovo" layoutX="35.0" layoutY="16.0" mnemonicParsing="false" onAction="#novo" style="-fx-background-color: #1A535C;" text="+ Novo Livro" textFill="#f5f5f5" />
                      </children>
                   </Pane>
                   <HBox prefHeight="520.0" prefWidth="1297.0">
                      <children>
-                        <TableView fx:id="tabelaLivros" prefHeight="519.0" prefWidth="848.0">
-                          <columns>
-                            <TableColumn fx:id="colunaISBN" prefWidth="75.0" text="ISBN" />
-                            <TableColumn fx:id="colunaTitulo" prefWidth="285.0" text="Titulo" />
-                              <TableColumn fx:id="colunaAutor" prefWidth="184.0" text="Autor" />
-                              <TableColumn fx:id="colunaAno" prefWidth="89.0" text="Ano" />
-                              <TableColumn fx:id="conulaEditora" prefWidth="214.0" text="Editora" />
-                          </columns>
-                        </TableView>
+                        <Pane prefHeight="519.0" prefWidth="849.0" style="-fx-background-color: #4ecdc4;">
+                           <children>
+                              <TableView fx:id="tabelaLivros" layoutX="17.0" layoutY="14.0" prefHeight="492.0" prefWidth="816.0">
+                                <columns>
+                                  <TableColumn fx:id="colunaISBN" prefWidth="75.0" text="ISBN" />
+                                  <TableColumn fx:id="colunaTitulo" prefWidth="285.0" text="Titulo" />
+                                    <TableColumn fx:id="colunaAutor" prefWidth="184.0" text="Autor" />
+                                    <TableColumn fx:id="colunaAno" prefWidth="89.0" text="Ano" />
+                                    <TableColumn fx:id="conulaEditora" prefWidth="214.0" text="Editora" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </Pane>
                         <Pane fx:id="paneDados" prefHeight="519.0" prefWidth="449.0">
                            <children>
                               <VBox prefHeight="519.0" prefWidth="449.0">
@@ -186,9 +190,9 @@
                         </Pane>
                      </children>
                   </HBox>
+                  <Pane prefHeight="32.0" prefWidth="1297.0" style="-fx-background-color: #4ecdc4;" />
                </children>
             </VBox>
-            <Pane layoutY="683.0" prefHeight="32.0" prefWidth="1297.0" style="-fx-background-color: #4ecdc4;" />
          </children>
       </Pane>
    </children>

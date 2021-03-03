@@ -48,3 +48,190 @@
 	at Main.GerenciarLivros.main(GerenciarLivros.java:43)
 
  ------------------------------------------------------------------------------------ 
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 02/03/2021 22:50:21
+ Descricao: Erro ao conectar no banco de dados!
+ Stack Trace: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at ExerciciosDialog/Database.ConnectionFactory.getConnection(ConnectionFactory.java:15)
+	at ExerciciosDialog/DAO.Dao_Livro.pesquisaTodos(Dao_Livro.java:39)
+	at ExerciciosDialog/Main.HomeController.listaDeLivros(HomeController.java:110)
+	at ExerciciosDialog/Main.HomeController.initTable(HomeController.java:105)
+	at ExerciciosDialog/Main.HomeController.initialize(HomeController.java:95)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2573)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2466)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3237)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3194)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3163)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3136)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3113)
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:3106)
+	at ExerciciosDialog/Main.Main.start(Main.java:13)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:846)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:277)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+ ------------------------------------------------------------------------------------ 
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 02/03/2021 22:51:06
+ Descricao: Erro ao conectar no banco de dados!
+ Stack Trace: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at ExerciciosDialog/Database.ConnectionFactory.getConnection(ConnectionFactory.java:15)
+	at ExerciciosDialog/DAO.Dao_Livro.pesquisaTodos(Dao_Livro.java:39)
+	at ExerciciosDialog/Main.HomeController.listaDeLivros(HomeController.java:112)
+	at ExerciciosDialog/Main.HomeController.initTable(HomeController.java:107)
+	at ExerciciosDialog/Main.HomeController.initialize(HomeController.java:97)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2573)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2466)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3237)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3194)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3163)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3136)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3113)
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:3106)
+	at ExerciciosDialog/Main.Main.start(Main.java:13)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:846)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:277)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+ ------------------------------------------------------------------------------------ 
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 02/03/2021 22:51:38
+ Descricao: Erro ao conectar no banco de dados!
+ Stack Trace: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at ExerciciosDialog/Database.ConnectionFactory.getConnection(ConnectionFactory.java:15)
+	at ExerciciosDialog/Database.ConnectionFactory.main(ConnectionFactory.java:36)
+
+ ------------------------------------------------------------------------------------ 
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 02/03/2021 22:51:38
+ Descricao: Sucesso!
+ ------------------------------------------------------------------------------------ 
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 02/03/2021 22:51:47
+ Descricao: Erro ao conectar no banco de dados!
+ Stack Trace: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at ExerciciosDialog/Database.ConnectionFactory.getConnection(ConnectionFactory.java:15)
+	at ExerciciosDialog/DAO.Dao_Livro.pesquisaTodos(Dao_Livro.java:39)
+	at ExerciciosDialog/Main.HomeController.listaDeLivros(HomeController.java:112)
+	at ExerciciosDialog/Main.HomeController.initTable(HomeController.java:107)
+	at ExerciciosDialog/Main.HomeController.initialize(HomeController.java:97)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2573)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2466)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3237)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3194)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3163)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3136)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3113)
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:3106)
+	at ExerciciosDialog/Main.Main.start(Main.java:13)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:846)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:277)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+ ------------------------------------------------------------------------------------ 
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 02/03/2021 22:52:49
+ Descricao: Erro ao conectar no banco de dados!
+ Stack Trace: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at ExerciciosDialog/Database.ConnectionFactory.getConnection(ConnectionFactory.java:15)
+	at ExerciciosDialog/DAO.Dao_Livro.pesquisaTodos(Dao_Livro.java:39)
+	at ExerciciosDialog/Main.HomeController.listaDeLivros(HomeController.java:112)
+	at ExerciciosDialog/Main.HomeController.initTable(HomeController.java:107)
+	at ExerciciosDialog/Main.HomeController.initialize(HomeController.java:97)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2573)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2466)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3237)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3194)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3163)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3136)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3113)
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:3106)
+	at ExerciciosDialog/Main.Main.start(Main.java:13)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:846)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:277)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+ ------------------------------------------------------------------------------------ 
+ ------------------------------------------------------------------------------------ 
+ Data/Hora: 02/03/2021 22:54:05
+ Descricao: Erro ao conectar no banco de dados!
+ Stack Trace: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at ExerciciosDialog/Database.ConnectionFactory.getConnection(ConnectionFactory.java:15)
+	at ExerciciosDialog/DAO.Dao_Livro.pesquisaTodos(Dao_Livro.java:39)
+	at ExerciciosDialog/Main.HomeController.listaDeLivros(HomeController.java:112)
+	at ExerciciosDialog/Main.HomeController.initTable(HomeController.java:107)
+	at ExerciciosDialog/Main.HomeController.initialize(HomeController.java:97)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2573)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2466)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3237)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3194)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3163)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3136)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3113)
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:3106)
+	at ExerciciosDialog/Main.Main.start(Main.java:13)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:846)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:277)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+ ------------------------------------------------------------------------------------ 
