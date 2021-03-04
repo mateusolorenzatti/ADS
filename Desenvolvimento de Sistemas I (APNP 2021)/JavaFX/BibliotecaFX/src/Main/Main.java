@@ -12,7 +12,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("homeView.fxml"));
         primaryStage.setTitle("Biblioteca");
-        primaryStage.setScene(new Scene(root, 1297, 668));
+        primaryStage.setScene(new Scene(root, 1297, 680));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

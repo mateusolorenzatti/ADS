@@ -35,7 +35,7 @@
                      </children>
                   </Pane>
                   <Pane prefHeight="33.0" prefWidth="701.0" />
-                  <VBox prefHeight="509.0" prefWidth="701.0">
+                  <VBox prefHeight="545.0" prefWidth="701.0">
                      <children>
                         <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="701.0" spacing="15.0">
                            <children>
@@ -75,6 +75,15 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="701.0" spacing="15.0">
                            <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Idioma" />
+                              <TextField fx:id="fieldIdioma" prefHeight="26.0" prefWidth="320.0" />
+                           </children>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="701.0" spacing="15.0">
+                           <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ano" />
                               <TextField fx:id="fieldAno" prefHeight="26.0" prefWidth="320.0" />
                            </children>
@@ -100,9 +109,14 @@
                               <Insets left="50.0" />
                            </padding>
                         </HBox>
-                        <HBox alignment="CENTER" prefHeight="59.0" prefWidth="701.0" spacing="15.0">
+                        <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="701.0" spacing="15.0">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="106.0" prefWidth="701.0" spacing="15.0" style="-fx-background-color: #4ecdc4;">
                            <children>
-                              <Button fx:id="botaoSalvar" mnemonicParsing="false" onAction="#salvar" style="-fx-background-color: #1A535C;" text="Salvar" textFill="WHITE" />
+                              <Button fx:id="botaoSalvar1" mnemonicParsing="false" onAction="#salvar" style="-fx-background-color: #1A535C;" text="Salvar" textFill="WHITE" />
                            </children>
                         </HBox>
                      </children>
