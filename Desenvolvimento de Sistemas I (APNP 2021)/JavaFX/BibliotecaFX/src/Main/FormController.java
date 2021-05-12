@@ -28,6 +28,7 @@ public class FormController {
         this.livro = livro;
 
         this.fieldISBN.setDisable(true);
+
         this.fieldISBN.setText(livro.getISBN());
         this.fieldTitulo.setText(livro.getTitulo());
         this.fieldAutor.setText(livro.getAutor());

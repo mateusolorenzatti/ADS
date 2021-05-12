@@ -2,7 +2,9 @@ package DAO;
 
 import Database.ConnectionFactory;
 import Database.SQL_Constantes;
+import Helpers.FXAssistant;
 import Objects.Livro;
+import javafx.scene.control.Alert;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -29,6 +31,8 @@ public class Dao_Livro<T> implements Dao<T> {
             stmt.setString(7, livro.getTitulo());
             stmt.setString(8, livro.getISBN());
             stmt.execute();
+        }catch (Exception ne){
+            FXAssistant.mostrarDialogo(Alert.AlertType.ERROR, "Erro ao conectar no banco!", "Verifique a conexão");
         }
     }
 
@@ -54,7 +58,10 @@ public class Dao_Livro<T> implements Dao<T> {
 
                 livros.add((T) livro);
             }
+        }catch (Exception ne){
+            FXAssistant.mostrarDialogo(Alert.AlertType.ERROR, "Erro ao conectar no banco!", "Verifique a conexão");
         }
+
         return livros;
     }
 
@@ -78,6 +85,8 @@ public class Dao_Livro<T> implements Dao<T> {
             stmt.setString(8, livro.getISBN());
 
             stmt.execute();
+        }catch (Exception ne){
+            FXAssistant.mostrarDialogo(Alert.AlertType.ERROR, "Erro ao conectar no banco!", "Verifique a conexão");
         }
     }
 
@@ -91,6 +100,8 @@ public class Dao_Livro<T> implements Dao<T> {
             stmt.setString(1, livro.getISBN());
 
             stmt.execute();
+        }catch (Exception ne){
+            FXAssistant.mostrarDialogo(Alert.AlertType.ERROR, "Erro ao conectar no banco!", "Verifique a conexão");
         }
     }
 

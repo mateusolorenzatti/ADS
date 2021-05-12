@@ -7,7 +7,7 @@ import java.time.format.DateTimeFormatter;
 //@author mateusolorenzatti
 
 public class Logger {
-    private static final String LOG_PATH = "/home/mateusolorenzatti/desenv/IFRS/ADS/Desenvolvimento de Sistemas I (APNP 2021)/AtividadeBD/res/db_log.txt";
+    private static final String LOG_PATH = "/home/mateusolorenzatti/desenv/IFRS/ADS/Desenvolvimento de Sistemas I (APNP 2021)/JavaFX/BibliotecaFX/res/db_log.txt";
 
     public static void logar(String descricao, Exception e) {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");

@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface Dao<T> {
 
-    public void adiciona(T m) throws SQLException;
+    public void adiciona(T m) throws SQLException, Exception;
 
     public void altera(T m) throws SQLException;
 

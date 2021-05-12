@@ -123,6 +123,7 @@ public class HomeController implements Initializable {
         } catch (SQLException throwables) {
             FXAssistant.mostrarDialogo(Alert.AlertType.ERROR, "Erro!", "Ocorreu um erro ao consultar os dados!");
         }
+
         return FXCollections.observableArrayList();
     }
 
