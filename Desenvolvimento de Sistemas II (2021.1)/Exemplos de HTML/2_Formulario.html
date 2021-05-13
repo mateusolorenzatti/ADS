@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário </title>
+</head>
+
+<body>
+    <div style="padding-right: 30px; padding-left: 30px; width: 500px;">
+        <br />
+        <br />
+        <form action="">
+            <fieldset style="padding-right: 30px; padding-left: 30px;">
+                <legend> Dados Pessoais </legend>
+                <br />
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <br />
+
+            </fieldset>
+            <br />
+
+            <fieldset style="padding-right: 30px; padding-left: 30px;">
+                <legend> Sua Avaliação </legend>
+                <br />
+
+                <label for="comoChegou"> Como você chegou até nós? &nbsp; </label>
+                <select name="comoChegou" id="comoChegou">
+                    <option value="google">Google</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="reddit">Reddit</option>
+                </select>
+                <br /> <br />
+
+                <label> Nos visitaria novamente? </label>
+                <br /> <br /> 
+
+                <input type="radio" id="sim" name="voltaria" value="Sim">
+                <label for="Sim">Sim</label>
+                <input type="radio" id="nao" name="voltaria" value="Nao">
+                <label for="Nao">Não</label>
+                <input type="radio" id="talvez" name="voltaria" value="Talvez">
+                <label for="Talvez">Talvez</label>
+                <br /> <br /> <br />
+                
+                <label for="comentarios"> Comentários:</label><br /><br />
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"> </textarea>
+                <br /> <br />
+
+                <input type="checkbox" id="receberNovidades" name="receberNovidades" value="receberNovidades" checked>
+                <label for="receberNovidades"> Desejo receber novidades por email </label> <br /><br /><br />
+                
+                <input type="submit" id="submit" name="submit" value="Enviar Dados"><br /><br /> 
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
