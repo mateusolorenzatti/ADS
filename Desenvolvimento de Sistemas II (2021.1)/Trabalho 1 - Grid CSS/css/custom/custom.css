@@ -1,0 +1,38 @@
+.img-container {
+    background-image: url("../../img/logo.png");
+    height: 50vh;
+    overflow-y: auto;
+ }
+
+ .img-front {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.img-content{
+    height: 50%;
+    width: 50%;
+    background-color: rgba(59, 59, 59, 0.8);
+    float: left;
+    padding: 2%;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-space {
+    height: 25%;
+    width: 40%;
+}
+
+.img-thumb {
+    width: 200px;
+    height: 200px;
+}
+
+.footer{
+    background-color: sandybrown;
+}
