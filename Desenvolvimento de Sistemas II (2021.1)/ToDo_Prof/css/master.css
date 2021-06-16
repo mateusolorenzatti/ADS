@@ -1,0 +1,58 @@
+div {
+    /* border: 1px dashed black; */
+}
+
+header {
+
+    margin: 1vh;
+}
+
+header input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+section {
+    margin: 10vh;
+}
+
+.bi-trash {
+    color: red;
+    font-size: large;
+    margin: 1vh;
+}
+
+.bi-check {
+    color: green;
+    font-size: larger;
+    margin: 1vh;
+}
+
+.anotacao-finalizada{
+    color: gray;
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 480px) {
+
+    section {
+        margin: 1vh;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) { 
+    section {
+        margin: 5vh;
+    }
+ }

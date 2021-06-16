@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./img/favicon.png">
+    <link href="./css/custom/custom.css" media="all" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="./css/bootstrap/bootstrap.min.css" media="all" rel="stylesheet">
+
+    <title> ToDo </title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="mx-auto">
+                <a class="navbar-brand" href="#">
+                    <!-- <img src="./img/favicon.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+                    Simple ToDo
+                </a>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-2"> </div>
+            <div class="col-md-8"> 
+                <div class="text-center mt-3 mb-0 align-middle card">
+                    <i id="icone-saudacao" class="material-icons mt-3 mb-2"> wb_sunny </i> 
+                    <p id="texto-saudacao" > Bom dia! </p>
+                </div>
+
+                <div class="col-12 card p-3 mt-3">
+                    <form class="form-row align-items-center row">
+                            <div class="col-10">
+                              <div class="input-group">
+                                <input id="inputTarefa" type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Digite aqui">
+                              </div>
+                            </div>
+                                    
+                            <div class="col-2">
+                              <button id="criarTarefa" type="submit" class="btn btn-primary w-100"> + </button>
+                            </div>  
+                    </form>
+                </div>
+                
+                <div id="listaTarefas" class="card mt-3">
+                    <p class="card-header"> Minhas Tarefas &nbsp; <span class="badge bg-success" id="numero-tarefas"> 0 </span> </p> 
+                    <!-- JS irá adicionar aqui -->
+
+                    <p id="texto-nenhuma-tarefa" class="text-muted text-center my-3"> Nenhuma tarefa criada... </p>
+                </div>
+    
+            </div>
+            <div class="col-md-2"> </div>
+
+        </div>
+    </section>
+
+    <script src="./js/jquery/jquery-3.6.0.js"></script>
+    <script src="./js/bootstrap/bootstrap.min.js"></script>
+
+    <script src="./js/master.js"></script>
+</body>
+</html>
