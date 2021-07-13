@@ -1,0 +1,18 @@
+.fill {
+    max-height: 70vh;
+    overflow: auto;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    padding: 1vh;
+    color: gray;
+}
+
+.ref {
+    font-size: small;
+}

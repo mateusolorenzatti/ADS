@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Carrinho de Compras</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="img/logo2.jpg" alt="Logo WebStore">
+            </div>
+            <div><i class="bi bi-cart"></i></div>
+            <div class="titulo">
+                
+                <h3>Carrinho de Compras</h3>
+            </div>
+        </header>
+        <section>
+            <article>
+                <div class="produto">
+                    <div>
+                        <img class="miniatura" src="img/sommerville_es.jpeg" alt="Imagem do Produto">
+                    </div>
+                    <div class="nome">
+                        <p>Engenharia de Software</p>
+                        <p class="autor">Ian Sommerville</p>
+                    </div>
+                    <div class="presente text-center">
+                        <small for="presente"> Para presente </small> <br/>
+                        <input class="paraPresente" type="checkbox" id="presente" name="presente" value="presente"> <br>
+                    </div>
+                    <div class="preco">
+                        <p>R$ <span class="valor">194,24</span></p>
+                    </div>
+                    <div class="qtd">
+                        <input class="qtdItemInput" type="number" name="quantidade" id="qutd" min="1" max="5" size="2" value="1">
+                    </div>
+                    <div class="remover">
+                        <div class="removerItem text-danger">
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="produto">
+                    <div>
+                        <img class="miniatura" src="img/norvig_ia.jpeg" alt="Imagem do Produto">
+                    </div>
+                    <div class="nome">
+                        <p>Inteligência Artificial</p>
+                        <p class="autor">Stuart Russel, Peter Norvig</p>
+                    </div>
+                    <div class="presente text-center">
+                        <small for="presente">  Para presente </small> <br/>
+                        <input class="paraPresente" type="checkbox" id="presente" name="presente" value="presente"> <br>
+                    </div>
+                    <div class="preco">
+                        <p>R$ <span class="valor">194,24</span></p>
+                    </div>
+                    <div class="qtd">
+                        <input class="qtdItemInput" type="number" name="quantidade" id="qutd" min="1" max="5" size="2" value="1">
+                    </div>
+                    <div class="remover">
+                        <div class="removerItem text-danger">
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <div id="total">
+            <p>Total R$ <span id="valor-total"></span></p>
+        </div>
+            
+        
+    </div>
+
+    <script src="./js/master2.js"></script>
+    <script src="./js/master.js"></script>
+
+</body>
+</html>
