@@ -55,3 +55,25 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2021-02-23 14:42:12
+
+DROP TABLE IF EXISTS `usuario`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `usuario` (
+  `id_usuario` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `nome_usuario` varchar(100) NOT NULL,
+  `email_usuario` varchar(50) CHARACTER SET ascii COLLATE ascii_general_ci NOT NULL,
+  `senha` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id_usuario`),
+  UNIQUE KEY `id_usuario` (`id_usuario`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+LOCK TABLES `usuario` WRITE;
+/*!40000 ALTER TABLE `aluno` DISABLE KEYS */;
+INSERT INTO `usuario` 
+  (nome_usuario, email_usuario, senha)
+  VALUES 
+  ('Admin','admin@academico.com','@dmin_02');
+/*!40000 ALTER TABLE `aluno` ENABLE KEYS */;
+UNLOCK TABLES;

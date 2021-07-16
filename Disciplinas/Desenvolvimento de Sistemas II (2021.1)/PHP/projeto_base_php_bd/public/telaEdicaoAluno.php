@@ -1,3 +1,13 @@
+<?php
+
+    include_once('verifica_session.php');
+  
+    if (!verifica_session()) {
+        header('location:index.html');
+    }
+
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -35,6 +45,12 @@ $aluno = buscaAlunoPorID($id_aluno);
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/telaNovoAluno.php"> Adicionar Aluno </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active disabled" href=""> | &nbsp; <?php echo $_SESSION['nome'] . " - " . $_SESSION['identificacao'] ?> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout.php"> | &nbsp; Sair </a>
                     </li>
                 </div>  
             </div>

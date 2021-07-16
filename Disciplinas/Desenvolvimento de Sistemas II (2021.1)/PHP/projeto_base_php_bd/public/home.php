@@ -1,3 +1,13 @@
+<?php
+
+    include_once('verifica_session.php');
+  
+    if (!verifica_session()) {
+        header('location:index.html');
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +24,7 @@
     <title>Acadêmico</title>
 </head>
 
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success mb-4">
         <div class="container">
@@ -27,6 +38,12 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/telaNovoAluno.php"> Adicionar Aluno </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active disabled" href=""> | &nbsp; <?php echo $_SESSION['nome'] . " - " . $_SESSION['identificacao'] ?> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout.php"> | &nbsp; Sair </a>
                     </li>
                 </div>  
             </div>

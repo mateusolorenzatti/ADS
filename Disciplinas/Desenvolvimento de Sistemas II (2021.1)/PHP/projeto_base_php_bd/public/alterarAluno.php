@@ -1,5 +1,11 @@
 <?php
 
+include_once('verifica_session.php');
+  
+if (!verifica_session()) {
+    header('location:index.html');
+}
+
 include_once "./dao/alunoDao.php";
 
 // print_r($_POST);
