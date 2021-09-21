@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="./css/custom.css">
 
     <title>Dashboard</title>
@@ -18,7 +18,13 @@
         <nav class="navbar navbar-expand-lg navbar-primary bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">Dashboard Vendas</a>
+
+                <span class="navbar-text">
+                    <span id="spanAtualizado"> Iniciando... </span> &nbsp; | &nbsp;
+                    <a class="btn btn-primary" id="btnAtualizar"> Atualizar </a>
+                </span>
             </div>
+
         </nav>
     </header>
 
@@ -34,14 +40,14 @@
                         <div class="col">
                             <div class="alert alert-success col-12 text-center" role="alert">
                                 <small> Masculino </small>
-                                <br/> <br/>
+                                <br /> <br />
                                 <h1 id="comprasMasculino"> ... </h1>
                             </div>
                         </div>
                         <div class="col">
                             <div class="alert alert-success col-12 text-center" role="alert">
                                 <small> Feminino </small>
-                                <br/> <br/>
+                                <br /> <br />
                                 <h1 id="comprasFeminino"> ... </h1>
                             </div>
                         </div>
@@ -59,15 +65,15 @@
                     <div class="row">
                         <div class="col-7">
                             <div class="alert alert-primary col-12 text-center" role="alert">
-                                <small> Valor total de compras com <br/> cartão de crédito </small>
-                                <br/> <br/> 
+                                <small> Valor total de compras com <br /> cartão de crédito </small>
+                                <br /> <br />
                                 <h1 id="comprasCartao"> ... </h1>
                             </div>
                         </div>
                         <div class="col-5">
                             <div class="alert alert-primary col-12 text-center" role="alert">
-                                <small> Número de compras sem cartão <br/> de Crédito </small>
-                                <br/> <br/>
+                                <small> Número de compras sem cartão <br /> de Crédito </small>
+                                <br /> <br />
                                 <h1 id="comprasSemCartao"> ... </h1>
                             </div>
                         </div>
@@ -86,28 +92,28 @@
                         <div class="col">
                             <div class="alert alert-danger col-12 text-center" role="alert">
                                 <small> Brazil </small>
-                                <br/> <br/> 
+                                <br /> <br />
                                 <h1 id="comprasBrasil"> ... </h1>
                             </div>
                         </div>
                         <div class="col">
                             <div class="alert alert-danger col-12 text-center" role="alert">
                                 <small> Canada </small>
-                                <br/> <br/>
+                                <br /> <br />
                                 <h1 id="comprasCanada"> ... </h1>
                             </div>
                         </div>
                         <div class="col">
                             <div class="alert alert-danger col-12 text-center" role="alert">
                                 <small> USA </small>
-                                <br/> <br/>
+                                <br /> <br />
                                 <h1 id="comprasUSA"> ... </h1>
                             </div>
                         </div>
                         <div class="col">
                             <div class="alert alert-danger col-12 text-center" role="alert">
                                 <small> UK </small>
-                                <br/> <br/>
+                                <br /> <br />
                                 <h1 id="comprasUK"> ... </h1>
                             </div>
                         </div>

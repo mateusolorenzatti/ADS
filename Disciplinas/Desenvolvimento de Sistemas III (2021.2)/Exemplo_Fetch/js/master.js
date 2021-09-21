@@ -2,8 +2,14 @@
 
 const URL = 'http://www.mocky.io/v2/5d6ed7ab320000c0c1a8aabd';
 
-const atualizarDados = (data) => {
-    
+const atualizarDados = () => 
+    fetch(URL)
+        .then(response => response.json())
+        .then(data => atualizarDashboard(data))
+        .catch(error => console.error("Requisição falhou", error))
+
+const atualizarDashboard = (data) => {
+
     /*
         city: "Lago da Pedra"
         country: "Brazil"
@@ -29,42 +35,43 @@ const atualizarDados = (data) => {
     }
 
     data.forEach(element => {
-        if ( element.gender == "Male") dados.comprasMasculino ++
-        if ( element.gender == "Female") dados.comprasFeminino ++
+        if (element.gender == "Male") dados.comprasMasculino++
+        if (element.gender == "Female") dados.comprasFeminino++
 
-        if ( element.credit_card ){
+        if (element.credit_card) {
             dados.comprasCartao += +(element.money.replace('$', ''))
-        }else {
-            dados.comprasSemCartao ++
+        } else {
+            dados.comprasSemCartao++
         }
 
-        switch(element.country) {
+        switch (element.country) {
             case "Brazil":
-              dados.comprasBrasil ++
-              break;
+                dados.comprasBrasil++
+                break;
 
             case "Canada":
-              dados.comprasCanada ++
-              break;
+                dados.comprasCanada++
+                break;
 
             case "United States":
-              dados.comprasUSA ++
-              break;
+                dados.comprasUSA++
+                break;
 
             case "United Kingdom":
-              dados.comprasUK ++
-              break;
-          } 
+                dados.comprasUK++
+                break;
+        }
     })
 
     dados.comprasCartao = 'US$ ' + dados.comprasCartao
 
-    Object.keys(dados).forEach( dado => {
-        document.getElementById(dado).innerHTML = dados[dado];
+    Object.keys(dados).forEach(dado => {
+        document.getElementById(dado).innerHTML = dados[dado]
     })
+
+    document.getElementById('spanAtualizado').innerHTML = "Atualizado em " + (new Date().toString().substring(0, 24))
 }
 
-fetch(URL)
-    .then(response => response.json())
-    .then(data => atualizarDados(data))
-    .catch(error => console.error("Requisição falhou", error))
+document.getElementById('btnAtualizar').onclick = atualizarDados
+
+atualizarDados()
