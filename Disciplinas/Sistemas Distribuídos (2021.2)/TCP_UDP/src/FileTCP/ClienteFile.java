@@ -12,7 +12,7 @@ public class ClienteFile {
         Socket socket = new Socket("10.0.0.119", 5000);
         byte[] contents = new byte[10000];
 
-        FileOutputStream fos = new FileOutputStream("e:\\Bookmarks1.html");
+        FileOutputStream fos = new FileOutputStream("/home/mateusolorenzatti/desenv/IFRS/ADS/Disciplinas/Sistemas Distribuídos (2021.2)/TCP_UDP/clientFiles/teste.txt");
         BufferedOutputStream bos = new BufferedOutputStream(fos);
         InputStream is = socket.getInputStream();
 

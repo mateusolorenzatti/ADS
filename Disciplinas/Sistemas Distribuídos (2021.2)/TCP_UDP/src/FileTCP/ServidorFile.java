@@ -16,7 +16,7 @@ public class ServidorFile {
 
         Socket socket = ssock.accept();
 
-        File file = new File("e:\\Bookmarks.html");
+        File file = new File("/home/mateusolorenzatti/desenv/IFRS/ADS/Disciplinas/Sistemas Distribuídos (2021.2)/TCP_UDP/serverFiles/teste.txt");
         FileInputStream fis = new FileInputStream(file);
         BufferedInputStream bis = new BufferedInputStream(fis);
 
