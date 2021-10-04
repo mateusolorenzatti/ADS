@@ -1,8 +1,8 @@
 package FileTCP;
 
 import java.io.*;
-import java.net.InetAddress;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
 
 public class ClienteFile {
     public static void main(String[] args) throws Exception {
@@ -18,15 +18,22 @@ public class ClienteFile {
 
         byte[] contents = new byte[10000];
 
-        FileOutputStream fos = new FileOutputStream("/home/mateusolorenzatti/desenv/IFRS/ADS/Disciplinas/Sistemas Distribuídos (2021.2)/TCP_UDP/clientFiles/teste.txt");
+        FileOutputStream fos = new FileOutputStream("/home/mateusolorenzatti/desenv/IFRS/ADS/Disciplinas/Sistemas Distribuídos (2021.2)/TCP_UDP/clientFiles/" + fileName);
         BufferedOutputStream bos = new BufferedOutputStream(fos);
         InputStream is = socket.getInputStream();
 
         int bytesRead = 0;
         while ((bytesRead = is.read(contents)) != -1)
             bos.write(contents, 0, bytesRead);
+
+        String retorno = new String(contents, StandardCharsets.UTF_8);
+        if (retorno.contains("Arquivo Inexistente!")){
+            System.out.println("O Arquivo não foi encontrado... Resposta do servidor: " + retorno);
+        }else{
+            System.out.println("Arquivo salvo com sucesso!");
+        }
+
         bos.flush();
         socket.close();
-        System.out.println("File saved successfully!");
     }
 }

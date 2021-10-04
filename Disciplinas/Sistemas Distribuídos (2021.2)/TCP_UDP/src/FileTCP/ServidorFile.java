@@ -18,35 +18,43 @@ public class ServidorFile {
         DataOutputStream outToClient = new DataOutputStream(socket.getOutputStream());
         requestedFile = inFromClient.readLine();
 
-        System.out.printf("Arquivo solicitado: " + requestedFile);
+        System.out.printf("Arquivo solicitado: " + requestedFile + "\n");
 
-//        File file = new File("/home/mateusolorenzatti/desenv/IFRS/ADS/Disciplinas/Sistemas Distribuídos (2021.2)/TCP_UDP/serverFiles/teste.txt");
-//        FileInputStream fis = new FileInputStream(file);
-//        BufferedInputStream bis = new BufferedInputStream(fis);
-//
-//        OutputStream os = socket.getOutputStream();
-//
-//        byte[] contents;
-//        long fileLength = file.length();
-//        long current = 0;
-//
-//        while (current != fileLength) {
-//            int size = 10000;
-//            if (fileLength - current >= size)
-//                current += size;
-//            else {
-//                size = (int) (fileLength - current);
-//                current = fileLength;
-//            }
-//            contents = new byte[size];
-//            bis.read(contents, 0, size);
-//            os.write(contents);
-//            System.out.print("Sending file ... " + (current * 100) / fileLength + "% complete!");
-//        }
-//        os.flush();
+        try{
+            File file = new File("/home/mateusolorenzatti/desenv/IFRS/ADS/Disciplinas/Sistemas Distribuídos (2021.2)/TCP_UDP/serverFiles/" + requestedFile);
+
+            FileInputStream fis = new FileInputStream(file);
+            BufferedInputStream bis = new BufferedInputStream(fis);
+
+            OutputStream os = socket.getOutputStream();
+
+            byte[] contents;
+            long fileLength = file.length();
+            long current = 0;
+
+            while (current != fileLength) {
+                int size = 10000;
+                if (fileLength - current >= size)
+                    current += size;
+                else {
+                    size = (int) (fileLength - current);
+                    current = fileLength;
+                }
+                contents = new byte[size];
+                bis.read(contents, 0, size);
+                os.write(contents);
+                System.out.print("Sending file ... " + (current * 100) / fileLength + "% complete!");
+            }
+            os.flush();
+            System.out.println("Arquivo enviado com sucesso!");
+
+        }catch (FileNotFoundException fnf){
+            outToClient.writeBytes("Arquivo Inexistente!");
+
+            System.out.println("Arquivo solicitado não foi encontrado!");
+        }
 
         socket.close();
         ssock.close();
-        System.out.println("File sent succesfully!");
     }
 }
