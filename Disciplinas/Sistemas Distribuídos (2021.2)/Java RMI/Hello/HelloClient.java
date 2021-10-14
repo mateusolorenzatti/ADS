@@ -20,7 +20,7 @@ public class HelloClient {
             msg = inFromUSer.readLine();
 
             // Obtém a stub do servidor
-            HelloWorld stub = (HelloWorld) registry.lookup(msg);
+            HelloWorld stub = (HelloWorld) registry.lookup("Hello");
 
             // Chama o método do servidor e imprime a mensagem
             String serverMsg = stub.hello(msg);
