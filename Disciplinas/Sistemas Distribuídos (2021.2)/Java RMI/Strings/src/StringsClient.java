@@ -20,8 +20,8 @@ public class StringsClient {
 
             BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("Escolha uma das Opções: ");
-            System.out.println(" 1 - Maximizar Texto ");
-            System.out.println(" 2 - Minimizar Texto ");
+            System.out.println(" 1 - Minimizar Texto ");
+            System.out.println(" 2 - Maximizar Texto ");
             System.out.println(" 3 - Reverter Texto ");
             System.out.println(" 4 - Dados do Servidor ");
             System.out.println(" -------------------------- ");

@@ -1,9 +1,7 @@
 import java.net.UnknownHostException;
-import java.rmi.*;
 import java.rmi.server.*;
 import java.rmi.registry.*;
 import java.net.InetAddress;
-import java.util.Locale;
 
 public class StringsServer implements Strings {
 
